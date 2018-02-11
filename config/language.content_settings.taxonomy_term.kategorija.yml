@@ -1,0 +1,11 @@
+uuid: 7ae0a959-b56d-4c9b-8772-35649d8d0ab2
+langcode: sl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.kategorija
+id: taxonomy_term.kategorija
+target_entity_type_id: taxonomy_term
+target_bundle: kategorija
+default_langcode: site_default
+language_alterable: false

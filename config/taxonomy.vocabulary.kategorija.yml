@@ -1,0 +1,9 @@
+uuid: be5e49df-c031-4555-8b22-3f2515aea2fe
+langcode: sl
+status: true
+dependencies: {  }
+name: Kategorija
+vid: kategorija
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,29 @@
+uuid: 9fdaf983-aab4-4cf6-ab84-fb49849a14b8
+langcode: sl
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_kategorija
+    - taxonomy.vocabulary.kategorija
+id: commerce_product.default.field_kategorija
+field_name: field_kategorija
+entity_type: commerce_product
+bundle: default
+label: Kategorija
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      kategorija: kategorija
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

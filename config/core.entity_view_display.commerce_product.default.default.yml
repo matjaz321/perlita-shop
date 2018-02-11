@@ -5,12 +5,11 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.default
     - field.field.commerce_product.default.body
-    - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_kategorija
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
   module:
     - commerce_product
-    - image
     - text
 _core:
   default_config_hash: gT03TFcuSod4d9uPQNs_gqK1F1QZ0Ray5CBYW0BNLnk
@@ -26,14 +25,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_image:
+  field_kategorija:
     weight: 4
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      link: true
     third_party_settings: {  }
-    type: image
+    type: entity_reference_label
     region: content
   title:
     label: hidden
