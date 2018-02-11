@@ -1,0 +1,7 @@
+title: Kontakt
+settings:
+  confirmation_message: 'Vaše sporočilo je bilo poslano.'
+handlers:
+  email_confirmation:
+    settings:
+      from_name: privzeto

@@ -1,0 +1,28 @@
+uuid: d59b02df-ee54-4561-aa99-0b86864b6255
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_products
+    - paragraphs.paragraphs_type.products_overview
+    - ps_landing_page_components.landing_page_components_type.product_overview
+id: paragraph.products_overview.field_products
+field_name: field_products
+entity_type: paragraph
+bundle: products_overview
+label: Products
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:landing_page_components'
+  handler_settings:
+    target_bundles:
+      product_overview: product_overview
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

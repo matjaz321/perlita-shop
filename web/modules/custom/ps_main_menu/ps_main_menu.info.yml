@@ -1,0 +1,5 @@
+name: 'ps_main_menu'
+type: module
+description: 'This module renders main naviagtion menu in block.'
+core: 8.x
+package: 'Perlita-Shop'

@@ -1,0 +1,9 @@
+uuid: bab7466d-d2fa-41bf-bff0-256c16afc896
+langcode: en
+status: true
+dependencies: {  }
+id: search_products_overview
+label: 'Search products overview'
+icon_uuid: null
+description: 'This is search view of all products on the page'
+behavior_plugins: {  }

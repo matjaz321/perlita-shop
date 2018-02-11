@@ -1,0 +1,6 @@
+uuid: 674fc940-7e60-441a-a327-84676541a514
+langcode: en
+status: true
+dependencies: {  }
+id: product_overview
+label: 'Product overview'

@@ -1,0 +1,58 @@
+uuid: d91ff6e6-feb7-48f7-b5c4-47a9e0758bc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jumbotron_video.field_cta
+    - field.field.paragraph.jumbotron_video.field_subtitle
+    - field.field.paragraph.jumbotron_video.field_title
+    - field.field.paragraph.jumbotron_video.field_video
+    - paragraphs.paragraphs_type.jumbotron_video
+  module:
+    - link
+    - video_embed_field
+id: paragraph.jumbotron_video.default
+targetEntityType: paragraph
+bundle: jumbotron_video
+mode: default
+content:
+  field_cta:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_subtitle:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_video:
+    weight: 0
+    label: hidden
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden: {  }

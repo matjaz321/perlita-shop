@@ -1,0 +1,26 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      pager:
+        options:
+          tags:
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
+      fields:
+        name:
+          label: Ime
+        type:
+          label: Tip
+        operations:
+          label: Operacije
+      filters:
+        type:
+          expose:
+            label: Tip
+  page_1:
+    display_title: Stran

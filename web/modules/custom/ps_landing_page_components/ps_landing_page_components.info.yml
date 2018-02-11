@@ -1,0 +1,5 @@
+name: 'ps_landing_page_components'
+type: module
+description: 'There can be created new components for landing page.'
+core: 8.x
+package: 'Perlita-Shop'

@@ -1,0 +1,22 @@
+uuid: f4e7ad17-d6d1-4fcf-930c-ee3859214875
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - perlita_shop
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: perlita_shop_content
+theme: perlita_shop
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

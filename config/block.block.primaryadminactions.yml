@@ -1,0 +1,18 @@
+uuid: 7c5b1113-2dbc-41a5-a315-6ae47b1aa8f6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - perlita_shop
+id: primaryadminactions
+theme: perlita_shop
+region: content
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

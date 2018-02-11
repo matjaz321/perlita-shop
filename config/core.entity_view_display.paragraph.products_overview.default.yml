@@ -1,0 +1,37 @@
+uuid: 67e723ed-91af-414a-9695-8db49c00167f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.products_overview.field_cta
+    - field.field.paragraph.products_overview.field_products
+    - paragraphs.paragraphs_type.products_overview
+  module:
+    - link
+id: paragraph.products_overview.default
+targetEntityType: paragraph
+bundle: products_overview
+mode: default
+content:
+  field_cta:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_products:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

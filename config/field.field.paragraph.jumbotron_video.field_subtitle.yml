@@ -1,0 +1,19 @@
+uuid: ed2c7e28-76df-4ceb-9ed3-a4ff9c7b6348
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.jumbotron_video
+id: paragraph.jumbotron_video.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: jumbotron_video
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

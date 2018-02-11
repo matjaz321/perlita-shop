@@ -1,0 +1,9 @@
+uuid: 86553b4e-a126-45cc-9857-399356c9568f
+langcode: en
+status: true
+dependencies: {  }
+id: latest_new
+label: 'Latest new'
+icon_uuid: null
+description: 'This represents the latest news from a blog.'
+behavior_plugins: {  }

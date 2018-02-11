@@ -1,0 +1,21 @@
+uuid: a1586c28-8c1c-437e-85c9-bac140bbd5cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - ps_landing_page_components
+id: landing_page_components.field_subtitle
+field_name: field_subtitle
+entity_type: landing_page_components
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

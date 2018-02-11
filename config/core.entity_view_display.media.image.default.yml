@@ -1,0 +1,37 @@
+uuid: 138cb136-b08d-49ae-be04-37507f9d428b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_image
+    - image.style.medium
+    - media_entity.bundle.image
+  module:
+    - image
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,20 @@
+name: perlita-shop
+type: theme
+description: 'Perlita shop theme.'
+package: Perlita-shop
+core: 8.x
+
+regions:
+  top: Top
+  header: Header
+  page_title: Page title
+  sidebar_first: Sidebar first
+  content: Content
+  sidebar_second: Sidebar second
+  footer_col1: Footer column 1
+  footer_col2: Footer column 2
+  footer_col3: Footer column 3
+  footer: Footer
+
+libraries:
+  - perlita_shop/perlita_shop

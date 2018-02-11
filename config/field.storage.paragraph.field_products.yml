@@ -1,0 +1,20 @@
+uuid: ff7aea8e-2219-4eb2-ae8d-969e1d2e1ef1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - ps_landing_page_components
+id: paragraph.field_products
+field_name: field_products
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: landing_page_components
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

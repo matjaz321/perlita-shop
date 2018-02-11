@@ -1,0 +1,20 @@
+uuid: 5d6f7987-1f8a-42d7-8b13-806c37db5e20
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - ps_landing_page_components
+id: paragraph.field_jumbotron_slider
+field_name: field_jumbotron_slider
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: landing_page_components
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

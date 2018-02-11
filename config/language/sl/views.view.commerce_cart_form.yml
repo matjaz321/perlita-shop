@@ -1,0 +1,17 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      fields:
+        unit_price__number:
+          label: Cena
+        edit_quantity:
+          label: Količina
+        remove_button:
+          label: Odstrani
+      arguments:
+        order_id:
+          exception:
+            title: Vsi

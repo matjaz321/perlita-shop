@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      fields:
+        title:
+          label: Naslov
+        quantity:
+          label: Količina
+      arguments:
+        order_id:
+          exception:
+            title: Vsi

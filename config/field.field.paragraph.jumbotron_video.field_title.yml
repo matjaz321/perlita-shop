@@ -1,0 +1,19 @@
+uuid: 2fdcd105-27e4-44ce-a667-64ea7305e0a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.jumbotron_video
+id: paragraph.jumbotron_video.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: jumbotron_video
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

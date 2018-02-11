@@ -1,0 +1,9 @@
+uuid: e20fe8d7-f3f6-4355-8501-8e8c0f6f928a
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron_slider
+label: 'Jumbotron slider'
+icon_uuid: null
+description: 'There is a background image, title, subtitle and CTA are centred but not in the white background. This is a slider.'
+behavior_plugins: {  }

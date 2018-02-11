@@ -1,0 +1,25 @@
+uuid: b496beb6-c36d-494e-939f-35c2d4ff0ed0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.latest_new.field_latest_news
+    - paragraphs.paragraphs_type.latest_new
+id: paragraph.latest_new.default
+targetEntityType: paragraph
+bundle: latest_new
+mode: default
+content:
+  field_latest_news:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

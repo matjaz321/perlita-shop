@@ -1,0 +1,11 @@
+entity.landing_page_components.add_form:
+  route_name: entity.landing_page_components.add_page
+  title: 'Add Landing page components'
+  appears_on:
+    - entity.landing_page_components.collection
+entity.landing_page_components_type.add_form:
+  route_name: entity.landing_page_components_type.add_form
+  title: 'Add Landing page components type'
+  appears_on:
+    - entity.landing_page_components_type.collection
+

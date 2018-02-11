@@ -1,0 +1,23 @@
+uuid: 81030049-8405-4e4b-8c3c-20b8915387e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta
+    - paragraphs.paragraphs_type.jumbotron_video
+  module:
+    - link
+id: paragraph.jumbotron_video.field_cta
+field_name: field_cta
+entity_type: paragraph
+bundle: jumbotron_video
+label: CTA
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

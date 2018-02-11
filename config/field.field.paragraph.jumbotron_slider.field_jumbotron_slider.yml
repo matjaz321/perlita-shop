@@ -1,0 +1,28 @@
+uuid: b5d3de09-2bf3-4c4a-8f69-67224bec696d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_jumbotron_slider
+    - paragraphs.paragraphs_type.jumbotron_slider
+    - ps_landing_page_components.landing_page_components_type.jumbotron_slider
+id: paragraph.jumbotron_slider.field_jumbotron_slider
+field_name: field_jumbotron_slider
+entity_type: paragraph
+bundle: jumbotron_slider
+label: 'Jumbotron Slider'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:landing_page_components'
+  handler_settings:
+    target_bundles:
+      jumbotron_slider: jumbotron_slider
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

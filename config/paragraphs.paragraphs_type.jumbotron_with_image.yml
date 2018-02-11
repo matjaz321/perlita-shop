@@ -1,0 +1,9 @@
+uuid: 4c8267bf-7263-4532-b06b-7e51a3a8eb0e
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron_with_image
+label: 'Jumbotron with Image'
+icon_uuid: null
+description: 'The background image is 1650x1100. Title, subtitle and CTA are in the white background in the centre of the image.'
+behavior_plugins: {  }

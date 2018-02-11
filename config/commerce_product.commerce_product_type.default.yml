@@ -1,0 +1,12 @@
+uuid: 621a480e-2454-4fc7-8a53-23c712ecb425
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 96ryTApvzUl00vKGZusJUDgPHQALAKN8Mb13Jxm02KU
+id: default
+label: Products
+description: ''
+variationType: default
+injectVariationFields: true
+traits: {  }

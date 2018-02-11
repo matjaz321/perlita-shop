@@ -1,0 +1,24 @@
+perlita_shop.mobile:
+  label: xsmall
+  mediaQuery: '(min-width: 480px)'
+  weight: 1
+  multipliers:
+    - 1x
+perlita_shop.tablet:
+  label: small
+  mediaQuery: '(min-width: 768px)'
+  weight: 2
+  multipliers:
+    - 1x
+perlita_shop.desktop:
+  label: medium
+  mediaQuery: '(min-width: 960px)'
+  weight: 3
+  multipliers:
+    - 1x
+perlita_shop.mobile:
+  label: large
+  mediaQuery: '(min-width: 1200px)'
+  weight: 4
+  multipliers:
+    - 1x

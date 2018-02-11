@@ -1,0 +1,45 @@
+uuid: 45e0c2cb-6cb7-4c6f-a4ec-07dd6da96644
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jumbotron_responsive_text.field_cta
+    - field.field.paragraph.jumbotron_responsive_text.field_responsive_title
+    - field.field.paragraph.jumbotron_responsive_text.field_subtitle
+    - paragraphs.paragraphs_type.jumbotron_responsive_text
+  module:
+    - link
+    - text
+id: paragraph.jumbotron_responsive_text.default
+targetEntityType: paragraph
+bundle: jumbotron_responsive_text
+mode: default
+content:
+  field_cta:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_responsive_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

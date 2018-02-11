@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains ps_landing_page_components.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ps_landing_page_components_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ps_landing_page_components module.
+    case 'help.page.ps_landing_page_components':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('There can be created new components for landing page.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ps_landing_page_components_theme() {
+  $theme = [];
+  $theme['landing_page_components'] = [
+    'render element' => 'elements',
+    'file' => 'landing_page_components.page.inc',
+    'template' => 'landing_page_components',
+  ];
+  $theme['landing_page_components_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'landing_page_components.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function ps_landing_page_components_theme_suggestions_landing_page_components(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#landing_page_components'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'landing_page_components__' . $sanitized_view_mode;
+  $suggestions[] = 'landing_page_components__' . $entity->bundle();
+  $suggestions[] = 'landing_page_components__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'landing_page_components__' . $entity->id();
+  $suggestions[] = 'landing_page_components__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

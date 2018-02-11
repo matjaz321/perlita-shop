@@ -1,0 +1,6 @@
+uuid: 7722dec1-09b3-4888-bb89-ce90fd659eab
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron_slider
+label: 'Jumbotron Slider'

@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * Contains ps_main_menu.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ps_main_menu_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ps_main_menu module.
+    case 'help.page.ps_main_menu':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module renders main naviagtion menu in block.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ps_main_menu_theme() {
+  $templates = [];
+
+  $templates['ps_main_menu'] = [
+    'file' => 'includes/theme.inc',
+    'variables' => [
+      'links' => [],
+    ],
+  ];
+
+  $templates['ps_user_menu'] = [
+    'file' => 'includes/theme.inc',
+    'variables' => [
+      'cart_block' => [],
+    ],
+  ];
+
+  $templates['ps_shopping_cart_block'] = [
+    'file' => 'includes/theme.inc',
+    'variables' => [
+      'content' => [],
+    ],
+  ];
+
+  return $templates;
+}

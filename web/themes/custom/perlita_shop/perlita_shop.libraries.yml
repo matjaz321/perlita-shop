@@ -1,0 +1,13 @@
+perlita_shop:
+  version: VERSION
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js_min/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.dialog.ajax

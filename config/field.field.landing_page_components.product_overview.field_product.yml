@@ -1,0 +1,28 @@
+uuid: 71f37849-fb2c-4861-8fbb-f5d83d93ebd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.landing_page_components.field_product
+    - ps_landing_page_components.landing_page_components_type.product_overview
+id: landing_page_components.product_overview.field_product
+field_name: field_product
+entity_type: landing_page_components
+bundle: product_overview
+label: Product
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      default: default
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: default
+field_type: entity_reference

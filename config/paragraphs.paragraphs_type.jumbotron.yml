@@ -1,0 +1,9 @@
+uuid: 582ab36b-0334-49b6-a2be-e76a37f7409e
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron
+label: Jumbotron
+icon_uuid: null
+description: 'This paragraph contains title, subtitle and CTA.'
+behavior_plugins: {  }

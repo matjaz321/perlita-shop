@@ -1,0 +1,53 @@
+uuid: ae01932e-e608-4b66-8d75-5344708fb2a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.landing_page_components.jumbotron_slider.field_image
+    - field.field.landing_page_components.jumbotron_slider.field_subtitle
+    - ps_landing_page_components.landing_page_components_type.jumbotron_slider
+  module:
+    - inline_entity_form
+id: landing_page_components.jumbotron_slider.default
+targetEntityType: landing_page_components
+bundle: jumbotron_slider
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

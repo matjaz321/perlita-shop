@@ -1,0 +1,9 @@
+uuid: 972c1e7b-0307-4e0e-80b7-daacfaab2092
+langcode: en
+status: true
+dependencies: {  }
+id: zlato
+label: Zlato
+orderItemType: default
+generateTitle: false
+traits: {  }

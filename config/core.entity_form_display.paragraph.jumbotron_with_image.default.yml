@@ -1,0 +1,59 @@
+uuid: 21b06005-d848-472d-b5c9-1e79032be0ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jumbotron_with_image.field_cta
+    - field.field.paragraph.jumbotron_with_image.field_image
+    - field.field.paragraph.jumbotron_with_image.field_subtitle
+    - field.field.paragraph.jumbotron_with_image.field_title
+    - paragraphs.paragraphs_type.jumbotron_with_image
+  module:
+    - inline_entity_form
+    - link
+id: paragraph.jumbotron_with_image.default
+targetEntityType: paragraph
+bundle: jumbotron_with_image
+mode: default
+content:
+  field_cta:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_image:
+    weight: 3
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,21 @@
+uuid: 5fffb846-5d35-4f51-8782-7e570f487b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_responsive_title
+    - paragraphs.paragraphs_type.jumbotron_responsive_text
+  module:
+    - text
+id: paragraph.jumbotron_responsive_text.field_responsive_title
+field_name: field_responsive_title
+entity_type: paragraph
+bundle: jumbotron_responsive_text
+label: 'Responsive title'
+description: "Responsive text is text between <span> </span>\r\nExample:\r\nNice <span> Summer  </span> Collection\r\nNice <span> Fall </span> Collection\r\nNice <span> Winter</span> Collection\r\n\r\nThis example shows that only text in span will change. In this example (Summer, Fall, Winter) will slide into each other."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

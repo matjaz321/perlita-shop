@@ -1,0 +1,18 @@
+
+# Landing page components menu items definition
+entity.landing_page_components.collection:
+  title: 'Landing page components list'
+  route_name: entity.landing_page_components.collection
+  description: 'List Landing page components entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Landing page components type menu items definition
+entity.landing_page_components_type.collection:
+  title: 'Landing page components type'
+  route_name: entity.landing_page_components_type.collection
+  description: 'List Landing page components type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

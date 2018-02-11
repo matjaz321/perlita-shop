@@ -1,0 +1,36 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Ponastavi
+      pager:
+        options:
+          tags:
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
+      fields:
+        title:
+          label: Naslov
+        type:
+          label: Tip
+        status:
+          label: Stanje
+          settings:
+            format_custom_true: Objavljeno
+        changed:
+          label: Posodobljeno
+        operations:
+          label: Operacije
+      filters:
+        type:
+          expose:
+            label: Tip
+        title:
+          expose:
+            label: Naslov
+  page_1:
+    display_title: Stran

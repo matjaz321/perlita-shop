@@ -1,0 +1,31 @@
+uuid: a7668d6f-dd81-4b27-902c-db6f4ae57ff3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jumbotron_slider.field_jumbotron_slider
+    - paragraphs.paragraphs_type.jumbotron_slider
+  module:
+    - inline_entity_form
+id: paragraph.jumbotron_slider.default
+targetEntityType: paragraph
+bundle: jumbotron_slider
+mode: default
+content:
+  field_jumbotron_slider:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

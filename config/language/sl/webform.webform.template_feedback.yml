@@ -1,0 +1,8 @@
+handlers:
+  email_confirmation:
+    settings:
+      from_name: privzeto
+      subject: privzeto
+  email_notification:
+    settings:
+      subject: privzeto

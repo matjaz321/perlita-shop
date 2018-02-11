@@ -1,0 +1,12 @@
+ps_landing_page_components.landing_page_components_type.*:
+  type: config_entity
+  label: 'Landing page components type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

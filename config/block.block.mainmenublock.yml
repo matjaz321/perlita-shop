@@ -1,0 +1,20 @@
+uuid: f0d24ead-79d3-4238-a967-8b2a8f41f81d
+langcode: en
+status: true
+dependencies:
+  module:
+    - ps_main_menu
+  theme:
+    - perlita_shop
+id: mainmenublock
+theme: perlita_shop
+region: top
+weight: -3
+provider: null
+plugin: main_menu_block
+settings:
+  id: main_menu_block
+  label: 'Main menu block'
+  provider: ps_main_menu
+  label_display: '0'
+visibility: {  }

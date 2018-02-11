@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      fields:
+        created:
+          label: Datum
+        rendered_entity:
+          label: Sporočilo
+        uid:
+          label: Uporabnik
+      arguments:
+        source_entity_id:
+          exception:
+            title: Vsi
+        source_entity_type:
+          exception:
+            title: Vsi
+  block_1:
+    display_title: Blok

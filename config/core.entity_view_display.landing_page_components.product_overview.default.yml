@@ -1,0 +1,27 @@
+uuid: 8fd02d11-af1b-410e-9350-cf060e0d920b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.landing_page_components.product_overview.field_product
+    - field.field.landing_page_components.product_overview.field_product_display_option
+    - ps_landing_page_components.landing_page_components_type.product_overview
+id: landing_page_components.product_overview.default
+targetEntityType: landing_page_components
+bundle: product_overview
+mode: default
+content:
+  field_product:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_product_display_option: true
+  langcode: true
+  name: true
+  user_id: true

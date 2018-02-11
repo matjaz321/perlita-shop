@@ -1,0 +1,19 @@
+uuid: 3cd95576-fbb0-492b-bb6b-02e163112a43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.jumbotron_responsive_text
+id: paragraph.jumbotron_responsive_text.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: jumbotron_responsive_text
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

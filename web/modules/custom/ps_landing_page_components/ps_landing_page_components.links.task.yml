@@ -1,0 +1,18 @@
+# Landing page components routing definition
+
+entity.landing_page_components.canonical:
+  route_name: entity.landing_page_components.canonical
+  base_route: entity.landing_page_components.canonical
+  title: 'View'
+
+entity.landing_page_components.edit_form:
+  route_name: entity.landing_page_components.edit_form
+  base_route: entity.landing_page_components.canonical
+  title: 'Edit'
+
+entity.landing_page_components.delete_form:
+  route_name:  entity.landing_page_components.delete_form
+  base_route:  entity.landing_page_components.canonical
+  title: Delete
+  weight: 10
+

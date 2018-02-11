@@ -1,0 +1,11 @@
+uuid: 263dbd16-4559-439b-956b-88ee8ad3ff01
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: QPuFH9E4612ox18hXdUXL8FhU021rCvOtYISSmvMQzc
+id: default
+label: Nakit
+orderItemType: default
+generateTitle: true
+traits: {  }

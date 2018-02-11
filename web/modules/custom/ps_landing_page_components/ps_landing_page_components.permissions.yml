@@ -1,0 +1,19 @@
+add landing page components entities:
+  title: 'Create new Landing page components entities'
+
+administer landing page components entities:
+  title: 'Administer Landing page components entities'
+  description: 'Allow to access the administration form to configure Landing page components entities.'
+  restrict access: true
+
+delete landing page components entities:
+  title: 'Delete Landing page components entities'
+
+edit landing page components entities:
+  title: 'Edit Landing page components entities'
+
+view published landing page components entities:
+  title: 'View published Landing page components entities'
+
+view unpublished landing page components entities:
+  title: 'View unpublished Landing page components entities'

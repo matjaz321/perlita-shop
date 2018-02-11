@@ -1,0 +1,22 @@
+uuid: e8de20c3-ddfc-4780-9f0c-9e675c07d5b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - perlita_shop
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: perlita_shop_help
+theme: perlita_shop
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

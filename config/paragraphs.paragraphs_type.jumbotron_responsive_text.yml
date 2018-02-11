@@ -1,0 +1,9 @@
+uuid: 5f32f036-0407-4bc1-877a-fe0587cab7d0
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron_responsive_text
+label: 'Jumbotron responsive text'
+icon_uuid: null
+description: 'This is responsive text which means title or just part or text can change'
+behavior_plugins: {  }

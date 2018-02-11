@@ -1,0 +1,9 @@
+uuid: deca2034-8b8d-4f5c-99e6-eb2dc198443d
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron_video
+label: 'Jumbotron video'
+icon_uuid: null
+description: 'The video in the background autoplays. Title, subtitle and CTA are centred.'
+behavior_plugins: {  }

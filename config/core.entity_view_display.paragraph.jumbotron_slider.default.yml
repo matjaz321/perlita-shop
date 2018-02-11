@@ -1,0 +1,22 @@
+uuid: de980ae2-3394-48ee-b88f-7cedd24b3ac1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jumbotron_slider.field_jumbotron_slider
+    - paragraphs.paragraphs_type.jumbotron_slider
+id: paragraph.jumbotron_slider.default
+targetEntityType: paragraph
+bundle: jumbotron_slider
+mode: default
+content:
+  field_jumbotron_slider:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

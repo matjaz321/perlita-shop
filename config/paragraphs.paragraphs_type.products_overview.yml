@@ -1,0 +1,9 @@
+uuid: c188201f-d379-41e1-b72c-1a763c17fbb5
+langcode: en
+status: true
+dependencies: {  }
+id: products_overview
+label: 'Products Overview'
+icon_uuid: null
+description: "There can be displayed as many products as you want.\r\nThere is also CTA button on the bottom."
+behavior_plugins: {  }

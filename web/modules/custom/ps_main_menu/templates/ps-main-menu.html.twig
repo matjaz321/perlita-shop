@@ -1,0 +1,24 @@
+{% if menu_links %}
+    <div class="main-menu display-inline">
+        <nav style="display: block">
+            <ul class="menu">
+                {% for menu_link in menu_links %}
+                    <li>
+                        {{ menu_link.link }}
+                        {% if menu_link.expended %}
+                            {% if menu_link.children %}
+                                <ul>
+                                    {% for children in menu_link.children %}
+                                        <li>
+                                            {{ children }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+{% endif %}

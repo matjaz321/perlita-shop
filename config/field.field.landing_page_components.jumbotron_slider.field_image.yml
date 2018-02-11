@@ -1,0 +1,28 @@
+uuid: 1581538c-bf11-43d1-94a5-844142b764dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.landing_page_components.field_image
+    - media_entity.bundle.image
+    - ps_landing_page_components.landing_page_components_type.jumbotron_slider
+id: landing_page_components.jumbotron_slider.field_image
+field_name: field_image
+entity_type: landing_page_components
+bundle: jumbotron_slider
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

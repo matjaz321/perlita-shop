@@ -1,0 +1,14 @@
+uuid: 10ce4708-ed20-4965-ba57-3386117592a0
+name: Perlita
+mail: support@perlita.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: sl
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

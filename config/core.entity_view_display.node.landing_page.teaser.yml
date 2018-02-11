@@ -1,0 +1,22 @@
+uuid: acf150f8-5019-484e-b2c1-f85117a5594c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.field_landing_page_content
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.teaser
+targetEntityType: node
+bundle: landing_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_landing_page_content: true
+  langcode: true

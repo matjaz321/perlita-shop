@@ -1,0 +1,27 @@
+uuid: 7c46519f-62cf-4f0b-8528-41fe669e251d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - ps_landing_page_components
+id: landing_page_components.field_product_display_option
+field_name: field_product_display_option
+entity_type: landing_page_components
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: normal
+      label: 'Normal Display'
+    -
+      value: exposed
+      label: 'Exposed Display'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+wl_general_onecol:
+  label: 'Perlita-Shop One column'
+  path: layouts/onecol
+  template: ps--layout--onecol
+  category: 'Columns: 1'
+  default_region: main
+  regions:
+    top:
+      label: Top
+    main:
+      label: Main
+    fullwidth:
+      label: Full width
+    bottom:
+      label: Bottom

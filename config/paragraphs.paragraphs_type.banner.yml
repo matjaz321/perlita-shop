@@ -1,0 +1,9 @@
+uuid: 444b4ee6-314c-4b2e-bf9e-0194f7e72021
+langcode: en
+status: true
+dependencies: {  }
+id: banner
+label: Banner
+icon_uuid: null
+description: 'This is just a picture (banner) of resolution 1720x610'
+behavior_plugins: {  }

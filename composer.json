@@ -1,0 +1,107 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 8 projects with composer",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/addtoany": "^1.8",
+        "drupal/admin_toolbar": "^1.22",
+        "drupal/adminimal_admin_toolbar": "^1.5",
+        "drupal/commerce": "^2.3",
+        "drupal/console": "^1.0.2",
+        "drupal/core": "~8.4",
+        "drupal/ctools": "^3.0",
+        "drupal/eu_cookie_compliance": "^1.0@beta",
+        "drupal/facets": "^1.0@beta",
+        "drupal/media_entity": "^1.7",
+        "drupal/metatag": "^1.4",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/panels": "^4.2",
+        "drupal/paragraphs": "^1.2",
+        "drupal/search_api": "^1.6",
+        "drupal/social_auth": "^1.0",
+        "drupal/social_auth_facebook": "^1.0",
+        "drupal/social_auth_google": "^1.0",
+        "drupal/social_auth_twitter": "^1.0@beta",
+        "drupal/twig_xdebug": "^1.0",
+        "drupal/video_embed_field": "^1.5",
+        "drupal/webform": "^5.0@RC",
+        "drush/drush": "^9.0.0",
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3"
+    },
+    "require-dev": {
+        "webflo/drupal-core-require-dev": "~8.4"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/ctools": {
+                "Avoid unserialization of blockPluginCollection in BlockDisplayVariant": "https://www.drupal.org/files/issues/ctools-unserialize-plugin-collection-2831521-1.patch"
+            },
+            "drupal/core": {
+                "Default text formats not being saved": "https://www.drupal.org/files/issues/1278886-51-default-text-formats.patch",
+                "Title for details form elements should be #markup": "https://www.drupal.org/files/issues/2652850-11.patch",
+                "Private temp store start session for anonymous users": "https://www.drupal.org/files/issues/2743931-26.patch"
+            },
+            "drupal/paragraphs": {
+                "Issue #2461695: Support translatable paragraph entity reference revision field": "https://www.drupal.org/files/issues/meta_support-2461695-222.patch",
+                "Issue #2868155: Add new hooks to allow easier editing of paragraph forms": "https://www.drupal.org/files/issues/2868155-16.patch",
+                "Issue #2877927: Show add widget between paragraphs on hover": "https://www.drupal.org/files/issues/show_add_widget-2877927-37.patch"
+            },
+            "drupal/page_manager": {
+                "Issue #2874851: Clicking a variant in page manager does not open the variant config": "https://www.drupal.org/files/issues/page_manager-2874851-8.patch"
+            }
+        }
+    }
+}

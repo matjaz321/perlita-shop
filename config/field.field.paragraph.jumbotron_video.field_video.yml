@@ -1,0 +1,25 @@
+uuid: 19e9290f-775f-4662-b621-c64b489f2d3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video
+    - paragraphs.paragraphs_type.jumbotron_video
+  module:
+    - video_embed_field
+id: paragraph.jumbotron_video.field_video
+field_name: field_video
+entity_type: paragraph
+bundle: jumbotron_video
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: '0'
+    youtube_playlist: '0'
+field_type: video_embed_field

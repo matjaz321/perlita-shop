@@ -1,0 +1,38 @@
+uuid: 14e796fe-240c-496d-8444-ebe98f13979d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.landing_page_components.product_overview.field_product
+    - field.field.landing_page_components.product_overview.field_product_display_option
+    - ps_landing_page_components.landing_page_components_type.product_overview
+id: landing_page_components.product_overview.default
+targetEntityType: landing_page_components
+bundle: product_overview
+mode: default
+content:
+  field_product:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_product_display_option:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  name: true
+  user_id: true

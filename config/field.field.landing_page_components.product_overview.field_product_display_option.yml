@@ -1,0 +1,23 @@
+uuid: bcb19730-3c0f-418e-9817-cc6205df29cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.landing_page_components.field_product_display_option
+    - ps_landing_page_components.landing_page_components_type.product_overview
+  module:
+    - options
+id: landing_page_components.product_overview.field_product_display_option
+field_name: field_product_display_option
+entity_type: landing_page_components
+bundle: product_overview
+label: 'Product display option'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: normal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

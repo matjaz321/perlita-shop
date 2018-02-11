@@ -1,0 +1,41 @@
+uuid: 4885c1b9-9c0c-46f4-9343-5d70e0e66c7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.landing_page_components.jumbotron_slider.field_image
+    - field.field.landing_page_components.jumbotron_slider.field_subtitle
+    - ps_landing_page_components.landing_page_components_type.jumbotron_slider
+id: landing_page_components.jumbotron_slider.default
+targetEntityType: landing_page_components
+bundle: jumbotron_slider
+mode: default
+content:
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  user_id: true
