@@ -6,10 +6,13 @@ dependencies:
     - commerce_product.commerce_product_type.default
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_kategorija
+    - field.field.commerce_product.default.field_slika
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
+    - image.style.thumbnail
   module:
     - commerce
+    - image
     - inline_entity_form
     - path
     - text
@@ -40,6 +43,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_slika:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   langcode:
     type: language_select
