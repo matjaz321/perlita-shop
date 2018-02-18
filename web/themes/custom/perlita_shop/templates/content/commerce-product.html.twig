@@ -1,0 +1,46 @@
+<div class="page-section section ptb-100">
+  <div class="container-fluid">
+    <div class="row mb-40">
+      <!-- QuickView Product Images -->
+      <div class="col-md-5 col-sm-6 col-xs-12 mb-40">
+        <!-- Tab panes -->
+        <div class="tab-content mb-10">
+          {% for index, image in images %}
+            <div class="pro-large-img tab-pane" id="{{ image.id }}">
+                {{ product.field_slika[index] }}
+            </div>
+          {% endfor %}
+        </div>
+        <!-- QuickView Product Thumbnail Slider -->
+        <div class="pro-thumb-img-slider">
+            {% for index, image in images %}
+              <div class="pro-large-img tab-pane" id="{{ image.id }}">
+                <div><a href="#{{ image.id }}" data-toggle="tab">{{ product.field_slika[index] }}</a></div>
+              </div>
+            {% endfor %}
+        </div>
+      </div>
+      <!-- QuickView Product Details -->
+      <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
+        <div class="product-details section">
+          <!-- Title -->
+          <h1 class="title">{{ product.title }}</h1>
+          <!-- Price Ratting -->
+          <div class="price-ratting section">
+            <!-- Price -->
+            <span class="price float-left"><span class="new">{{ product.variation_price.0 }}</span></span>
+          </div>
+          <!-- Short Description -->
+          <div class="short-desc section">
+            <h5 class="pd-sub-title">Opis</h5>
+            <p>{{ product.body }}</p>
+          </div>
+          <!-- Quantity Cart -->
+          <div class="quantity-cart section">
+            <button class="add-to-cart" onclick="window.location.href='{{ add_to_cart_url }}'">Dodaj v košarico</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

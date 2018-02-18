@@ -23,6 +23,7 @@
         "drupal/admin_toolbar": "^1.22",
         "drupal/adminimal_admin_toolbar": "^1.5",
         "drupal/commerce": "^2.3",
+        "drupal/commerce_shipping": "^2.0@beta",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.4",
         "drupal/ctools": "^3.0",

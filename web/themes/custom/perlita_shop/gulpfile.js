@@ -51,14 +51,7 @@ gulp.task('default', function(){
   gulp.src('./sass/fonts/*').pipe(gulp.dest('./css/fonts'));
   gulp.src('./sass/**/*.css').pipe(gulp.dest('./css'));
   gulp.watch('./js/**/*.js', ['scripts']);
-  gulp.watch(['./css/style.css', './js_min/scripts.js'], function (files){
+  gulp.watch(['./css/style.css'], function (files){
     livereload.changed(files)
   });
-});
-
-gulp.task('scripts', function() {
-  gulp.src(['./js/*.js'])
-  .pipe(concat('scripts.js'))
-  .pipe(uglify())
-  .pipe(gulp.dest('./js_min/'))
 });

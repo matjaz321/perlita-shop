@@ -1,0 +1,14 @@
+uuid: cb8c237f-6ebd-4175-bf3d-5fdf648cb49e
+langcode: sl
+status: true
+dependencies: {  }
+id: default
+label: Default
+dimensions:
+  length: '30'
+  width: '30'
+  height: '30'
+  unit: cm
+weight:
+  number: '5'
+  unit: kg

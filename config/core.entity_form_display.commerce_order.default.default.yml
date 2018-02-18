@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_order.commerce_order_type.default
     - field.field.commerce_order.default.order_items
+    - field.field.commerce_order.default.shipments
   module:
     - commerce_order
     - inline_entity_form
@@ -31,7 +32,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 20
+    weight: 3
     region: content
     third_party_settings: {  }
   order_items:
@@ -52,6 +53,7 @@ hidden:
   ip_address: true
   mail: true
   order_number: true
+  shipments: true
   state: true
   store_id: true
   uid: true

@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
-label: 'Anonymous user'
+label: 'Anonimni uporabnik'
 weight: 0
 is_admin: false
 permissions:
@@ -17,3 +17,4 @@ permissions:
   - 'search content'
   - 'use text format restricted_html'
   - 'view commerce_product'
+  - 'view published landing page components entities'

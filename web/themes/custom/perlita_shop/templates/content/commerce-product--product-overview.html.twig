@@ -1,0 +1,20 @@
+<div class="col-md-3 col-sm-6 col-xs-12 grid-item">
+    <div class="shop hover-style mb-30">
+        <div class="shop-img">
+            <div class="shop-single-img">
+                <a href="{{ product_url }}">
+                    {{ product.field_slika.0 }}
+                </a>
+                <div class="product-cart-3">
+                    <a href="{{ add_to_cart_url }}"><i class="pe-7s-cart"></i></a>
+                    {#<a href="#" data-toggle="modal" data-target="#productModal"><i class="pe-7s-look"></i></a>#}
+                </div>
+            </div>
+            <div class="title-style-3 text-center">
+                <h3><a href="{{ product_url }}">{{ product.title.0 }}</a></h3>
+                {#<span class="new-price">$50</span>#}
+                <span class="new-price">{{ product.variation_price.0 }}</span>
+            </div>
+        </div>
+    </div>
+</div>

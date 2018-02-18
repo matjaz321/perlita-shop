@@ -3,16 +3,14 @@
 namespace Drupal\ps_main_menu\Controller;
 
 use Drupal\commerce_order\Entity\Order;
-use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\commerce_order\Entity\OrderItem;
-use Drupal\commerce_order\Entity\OrderItemInterface;
+use Drupal\commerce_product\Entity\ProductVariation;
+use Drupal\commerce_store\Entity\Store;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\commerce_cart\CartManager;
 use Symfony\Component\HttpFoundation\RedirectResponse;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class CardItemRemoveController.
@@ -43,7 +41,7 @@ class CardItemRemoveController extends ControllerBase {
   }
 
   /**
-   * Removeitem.
+   * Remove item.
    *
    * @return string
    *   Return Hello string.
@@ -54,6 +52,40 @@ class CardItemRemoveController extends ControllerBase {
 
     $this->commerceCartCartManager->removeOrderItem($order_entity, $order_item_entity);
     $request = new RedirectResponse(Url::fromRoute('<front>')->toString());
+    return $request;
+  }
+
+  /**
+   * Add item.
+   *
+   * @return string
+   *   Return Hello string.
+   */
+  public function addItem(ProductVariation $variation) {
+    $store_id = 1;
+    $order_type = 'default';
+
+    $cart_provider = \Drupal::service('commerce_cart.cart_provider');
+
+    $store = Store::load($store_id);
+    // This is special: We must know if there is already a cart for the provided
+    // order type and store:
+    $cart = $cart_provider->getCart($order_type, $store);
+    if (!$cart) {
+      $cart = $cart_provider->createCart($order_type, $store);
+    }
+
+    $order_item = OrderItem::create([
+      'type' => 'default',
+      'purchased_entity' => (string) $variation->id(),
+      'quantity' => 1,
+      'unit_price' => $variation->getPrice(),
+    ]);
+    $order_item->save();
+    $this->commerceCartCartManager->addOrderItem($cart, $order_item);
+
+    drupal_set_message(t('Product added to the cart.'));
+    $request = new RedirectResponse(Url::fromRoute('commerce_cart.page')->toString());
     return $request;
   }
 

@@ -161,3 +161,15 @@ function perlita_shop_theme_suggestions_alter(array &$suggestions, array $variab
     $suggestions[] = 'form__' . str_replace('-', '_', $variables['element']['#id']);
   }
 }
+
+/**
+ * Function implements hook_preprocess_hook().
+ */
+function perlita_shop_preprocess_commerce_product(&$variables) {
+  $images = $variables['product']['field_slika']['#items'];
+  $images = $images->getValue();
+  foreach ($images as $index => $image) {
+    $variables['images'][$index]['image'] = $variables['product']['field_slika'][$index];
+    $variables['images'][$index]['id'] = $image['target_id'];
+  }
+}

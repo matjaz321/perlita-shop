@@ -1,4 +1,4 @@
-uuid: fbcd0434-566d-4ef8-bcaa-6612ea1928bd
+uuid: 6ac607b7-e026-4f06-9e3f-4a9f2c4ff624
 langcode: sl
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
     - commerce_promotion
     - commerce_shipping
 _core:
-  default_config_hash: wwkDVBiXUqSzRifJbb71ajFBklJdNJ_DgS67IF-_qgY
-id: default
-label: Default
+  default_config_hash: eGgj-Vay13MNDxbtb1YAjNZuUUgbp92Tr9hDQcR7ogo
+id: shipping
+label: Shipping
 plugin: multistep_default
 configuration:
   display_checkout_progress: true
@@ -20,31 +20,20 @@ configuration:
       step: login
       weight: 0
     contact_information:
-      double_entry: true
+      double_entry: false
       step: order_information
       weight: 1
     shipping_information:
-      require_shipping_profile: false
+      require_shipping_profile: true
       step: order_information
       weight: 2
-    payment_information:
-      step: order_information
-      weight: 3
     review:
       step: review
-      weight: 4
-    payment_process:
-      capture: true
-      step: payment
-      weight: 5
+      weight: 3
     completion_message:
       step: complete
-      weight: 6
+      weight: 4
     order_summary:
       view: commerce_checkout_order_summary
       step: _sidebar
-      weight: 7
-    coupon_redemption:
-      allow_multiple: false
-      step: _sidebar
-      weight: 8
+      weight: 5

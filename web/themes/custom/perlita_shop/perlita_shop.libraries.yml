@@ -4,10 +4,31 @@ perlita_shop:
     theme:
       css/style.css: {}
   js:
-    js_min/scripts.js: {}
+    js/scripts.js: {}
+    js/isotope.pkgd.min.js: {}
+    js/imagesloaded.pkgd.min.js: {}
+    js/owl.carousel.min.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
     - core/drupal
     - core/drupalSettings
     - core/drupal.dialog.ajax
+  isotope:
+    version: VERSION
+    js:
+      js/isotope.pkgd.min.js: {}
+    dependencies:
+      - core/jquery
+      - core/jquery.once
+      - core/drupal
+      - core/drupalSettings
+  imagesloaded:
+      version: VERSION
+      js:
+        js/imagesloaded.pkgd.min.js: {}
+      dependencies:
+        - core/jquery
+        - core/jquery.once
+        - core/drupal
+        - core/drupalSettings

@@ -1,0 +1,14 @@
+uuid: 34c05db6-1800-4816-80b9-1b510c6a86f0
+langcode: sl
+status: true
+dependencies: {  }
+name: product_small_preview
+label: 'Product small preview'
+effects:
+  451f494d-448c-4f95-b443-98b3f8c9c59c:
+    uuid: 451f494d-448c-4f95-b443-98b3f8c9c59c
+    id: image_resize
+    weight: 1
+    data:
+      width: 116
+      height: 128

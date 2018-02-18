@@ -118,7 +118,7 @@ class UserMenuBlock extends BlockBase implements ContainerFactoryPluginInterface
 
     $build['#cart_block'] = $plugin_block->build();
 
-    if (empty($build['#cart_block']['content'])) {
+    if (empty($build['#cart_block']['#content'])) {
       $build['#cart_block']['#theme'] = 'commerce_cart_empty_page';
     }
 

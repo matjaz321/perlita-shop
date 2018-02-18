@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.paragraph.products_overview.field_cta
     - field.field.paragraph.products_overview.field_products
+    - field.field.paragraph.products_overview.field_subtitle
+    - field.field.paragraph.products_overview.field_title
     - paragraphs.paragraphs_type.products_overview
   module:
     - inline_entity_form
@@ -15,7 +17,7 @@ bundle: products_overview
 mode: default
 content:
   field_cta:
-    weight: 1
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -23,7 +25,7 @@ content:
     type: link_default
     region: content
   field_products:
-    weight: 0
+    weight: 2
     settings:
       form_mode: default
       label_singular: ''
@@ -34,6 +36,22 @@ content:
       override_labels: false
     third_party_settings: {  }
     type: inline_entity_form_complex
+    region: content
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true

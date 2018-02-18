@@ -1,0 +1,19 @@
+uuid: 9addb76c-619e-4afc-aed1-1d07f9115462
+langcode: sl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.products_overview
+id: paragraph.products_overview.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: products_overview
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

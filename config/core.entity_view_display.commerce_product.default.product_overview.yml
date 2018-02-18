@@ -1,45 +1,31 @@
-uuid: aaadc13a-08b9-4c90-82de-f109f9f04e44
+uuid: a402a106-22a8-4cce-be98-155a25371018
 langcode: sl
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.default
+    - core.entity_view_mode.commerce_product.product_overview
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_kategorija
     - field.field.commerce_product.default.field_slika
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
+    - image.style.product_overview_image
   module:
     - commerce_product
     - image
-    - text
 _core:
   default_config_hash: gT03TFcuSod4d9uPQNs_gqK1F1QZ0Ray5CBYW0BNLnk
-id: commerce_product.default.default
+id: commerce_product.default.product_overview
 targetEntityType: commerce_product
 bundle: default
-mode: default
+mode: product_overview
 content:
-  body:
-    type: text_default
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_kategorija:
-    weight: 4
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_slika:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: product_overview_image
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -47,21 +33,23 @@ content:
   title:
     label: hidden
     type: string
-    weight: 1
+    weight: 2
     region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
-    weight: 3
+    weight: 1
     label: hidden
     settings:
       combine: true
     third_party_settings: {  }
     region: content
 hidden:
+  body: true
   created: true
+  field_kategorija: true
   langcode: true
   stores: true
   uid: true

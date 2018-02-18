@@ -1,0 +1,14 @@
+uuid: c3a4eed7-15ab-4b4e-adf1-c079bd1dadb9
+langcode: en
+status: true
+dependencies: {  }
+name: product_overview_image
+label: 'Product Overview Image'
+effects:
+  fd693910-f609-4ee7-bdc3-b711a66d7286:
+    uuid: fd693910-f609-4ee7-bdc3-b711a66d7286
+    id: image_resize
+    weight: 2
+    data:
+      width: 380
+      height: 450

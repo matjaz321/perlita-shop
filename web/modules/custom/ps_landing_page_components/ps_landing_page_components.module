@@ -30,7 +30,7 @@ function ps_landing_page_components_theme() {
   $theme = [];
   $theme['landing_page_components'] = [
     'render element' => 'elements',
-    'file' => 'landing_page_components.page.inc',
+    'file' => 'includes/theme.inc',
     'template' => 'landing_page_components',
   ];
   $theme['landing_page_components_content_add_list'] = [

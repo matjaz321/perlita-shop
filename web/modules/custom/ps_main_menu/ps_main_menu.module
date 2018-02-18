@@ -119,3 +119,28 @@ function ps_main_menu_preprocess_views_view_unformatted(&$variables) {
   }
 
 }
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function ps_main_menu_preprocess_commerce_product__product_overview(&$variables) {
+  $product = $variables['product_entity'];
+  $variations = $product->getVariations();
+  $variation = reset($variations);
+  $variables['add_to_cart_url'] = Url::fromRoute('ps_main_menu.add_to_card', [
+    'variation' => $variation->id(),
+  ])->toString();
+}
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function ps_main_menu_preprocess_commerce_product(&$variables) {
+  $product = $variables['product_entity'];
+  $variations = $product->getVariations();
+  $variation = reset($variations);
+  $variables['add_to_cart_url'] = Url::fromRoute('ps_main_menu.add_to_card', [
+    'variation' => $variation->id(),
+  ])->toString();
+}
+

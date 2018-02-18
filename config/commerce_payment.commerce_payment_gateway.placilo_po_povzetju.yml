@@ -1,0 +1,18 @@
+uuid: 5a92ab56-b48b-4246-b119-d5264627ff40
+langcode: sl
+status: true
+dependencies: {  }
+id: placilo_po_povzetju
+label: 'Plačilo po povzetju'
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: ''
+    format: plain_text
+  display_label: 'Plačilo po povzetju'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND
