@@ -9,7 +9,7 @@ dependencies:
 id: mainmenublock
 theme: perlita_shop
 region: top
-weight: -3
+weight: -4
 provider: null
 plugin: main_menu_block
 settings:

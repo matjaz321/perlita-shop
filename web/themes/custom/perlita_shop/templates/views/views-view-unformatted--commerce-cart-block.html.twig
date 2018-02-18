@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% if rows %}
+  {% for row in rows %}
+    <li>{{ row.content }}</li>
+  {% endfor %}
+  <li>
+    <hr class="shipping-border" />
+    <div class="shipping">
+      <span class="f-left"> Total </span>
+      <span class="f-right cart-price">{{ total }}</span>
+    </div>
+  </li>
+  <li class="checkout m-0"><a href="{{ checkout_url }}">checkout <i class="pe-7s-angle-right"></i></a></li>
+{% endif %}

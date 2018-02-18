@@ -1,12 +1,9 @@
-uuid: 87bde77e-bb13-4769-b42e-386e45f3b7c2
-langcode: en
+langcode: sl
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
-_core:
-  default_config_hash: oD4-sBe1DuP4pjAgc9olBv1_uRKRv0LPw-lGOJBCads
 open: null
 close: null
 uid: null
@@ -39,6 +36,7 @@ settings:
   form_reset: false
   form_disable_autocomplete: false
   form_novalidate: false
+  form_required: false
   form_unsaved: false
   form_disable_back: false
   form_submit_back: false
@@ -52,6 +50,10 @@ settings:
   submission_login: false
   submission_login_message: ''
   submission_exception_message: ''
+  submission_locked_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
   wizard_progress_bar: true
   wizard_progress_pages: false
   wizard_progress_percentage: false
@@ -194,3 +196,6 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+uuid: 87bde77e-bb13-4769-b42e-386e45f3b7c2
+_core:
+  default_config_hash: oD4-sBe1DuP4pjAgc9olBv1_uRKRv0LPw-lGOJBCads

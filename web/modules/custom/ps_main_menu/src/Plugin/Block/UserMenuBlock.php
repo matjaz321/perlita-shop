@@ -105,8 +105,8 @@ class UserMenuBlock extends BlockBase implements ContainerFactoryPluginInterface
       '#theme' => 'ps_user_menu',
     ];
     // You can hard code configuration or you load from settings.
-    $config = [];
-    $plugin_block = $this->blockManager->createInstance('shopping_cart_block', $config);
+    $config = ['dropdown' => 1];
+    $plugin_block = $this->blockManager->createInstance('commerce_cart', $config);
     // Some blocks might implement access check.
     $access_result = $plugin_block->access($this->currentUser);
     // Return empty render array if user doesn't have access.
@@ -116,8 +116,25 @@ class UserMenuBlock extends BlockBase implements ContainerFactoryPluginInterface
       return [];
     }
 
-    $content = $plugin_block->build();
-    $build['#cart_block'] = $this->renderer->renderPlain($content);
+    $build['#cart_block'] = $plugin_block->build();
+
+    if (empty($build['#cart_block']['content'])) {
+      $build['#cart_block']['#theme'] = 'commerce_cart_empty_page';
+    }
+
+    // You can hard code configuration or you load from settings.
+    $config = [];
+    $plugin_block = $this->blockManager->createInstance('user_block', $config);
+    // Some blocks might implement access check.
+    $access_result = $plugin_block->access($this->currentUser);
+    // Return empty render array if user doesn't have access.
+    // $access_result can be boolean or an AccessResult class.
+    if (is_object($access_result) && $access_result->isForbidden() || is_bool($access_result) && !$access_result) {
+      // You might need to add some cache tags/contexts.
+      return [];
+    }
+
+    $build['#user_block'] = $plugin_block->build();
 
     return $build;
   }

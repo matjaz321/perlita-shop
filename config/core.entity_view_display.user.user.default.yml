@@ -1,13 +1,11 @@
 uuid: bc71a24f-7c7d-44ae-8e35-0719a4fd6bb0
-langcode: en
+langcode: sl
 status: true
 dependencies:
   config:
     - field.field.user.user.commerce_remote_id
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - image
     - user
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
@@ -15,20 +13,10 @@ id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
-content:
-  member_for:
-    weight: 5
-    region: content
-  user_picture:
-    type: image
-    weight: 0
-    region: content
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
+content: {  }
 hidden:
   commerce_remote_id: true
   langcode: true
+  member_for: true
   profile_customer: true
+  user_picture: true

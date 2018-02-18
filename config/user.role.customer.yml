@@ -1,9 +1,0 @@
-uuid: c4a4faf7-494b-4933-be66-16414a995e78
-langcode: en
-status: true
-dependencies: {  }
-id: customer
-label: Customer
-weight: 3
-is_admin: null
-permissions: {  }

@@ -1,0 +1,12 @@
+ps_main_menu.card_item_remove:
+  path: '/product/{order}/{order_item}/remove'
+  defaults:
+    _controller: '\Drupal\ps_main_menu\Controller\CardItemRemoveController::removeItem'
+  requirements:
+      _access: 'TRUE'
+  options:
+      parameters:
+        node1:
+          type: entity:commerce_order
+        node2:
+          type: entity:commerce_order_item

@@ -14,3 +14,4 @@ disable_admin_login: true
 disabled_roles: {  }
 _core:
   default_config_hash: 1tS3jCuYxV3TXQ2cq320XarjdXWprvWK5bru8DCsIUY
+langcode: sl

@@ -1,12 +1,9 @@
-uuid: 15a1c172-03db-4d87-9353-02f63de84829
-langcode: en
+langcode: sl
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
-_core:
-  default_config_hash: QNlSCGXBlV0di6MrLp3RlRpzQYXN6enj_DI2KOigiU8
 open: null
 close: null
 uid: null
@@ -39,6 +36,7 @@ settings:
   form_reset: false
   form_disable_autocomplete: false
   form_novalidate: false
+  form_required: false
   form_unsaved: false
   form_disable_back: false
   form_submit_back: false
@@ -52,6 +50,10 @@ settings:
   submission_login: false
   submission_login_message: ''
   submission_exception_message: ''
+  submission_locked_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
   wizard_progress_bar: true
   wizard_progress_pages: false
   wizard_progress_percentage: false
@@ -130,3 +132,6 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
+uuid: 15a1c172-03db-4d87-9353-02f63de84829
+_core:
+  default_config_hash: QNlSCGXBlV0di6MrLp3RlRpzQYXN6enj_DI2KOigiU8

@@ -9,7 +9,7 @@ dependencies:
 id: usermenublock
 theme: perlita_shop
 region: top
-weight: -2
+weight: -3
 provider: null
 plugin: user_menu_block
 settings:

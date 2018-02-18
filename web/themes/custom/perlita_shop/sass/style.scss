@@ -10,17 +10,15 @@ Categorizing:
 
 @charset "UTF-8";
 
-// Import variables
-@import "variables/_default.scss";
+@import "libraries/bootstrap.min.css";
 
-// Base css
-@import "base/base.scss";
-@import "base/bundle.scss";
+// Css
+@import "shortcodes/shortcode.css";
 
 // Third party css libraries
-@import "libraries/animate-headline";
-@import "libraries/bootstrap.min";
-@import "libraries/font-awesome.min";
-@import "libraries/meanmenu";
-@import "libraries/owl.carousel.min";
-@import "libraries/pe-icon-7-stroke";
+@import "libraries/font-awesome.min.css";
+@import "libraries/meanmenu.css";
+@import "libraries/owl.carousel.min.css";
+@import "libraries/pe-icon-7-stroke.css";
+@import "libraries/responsive.css";
+@import "libraries/style2.css";

@@ -1,0 +1,14 @@
+uuid: 36ac7eda-d229-4228-b97f-919a7fc4e47d
+langcode: en
+status: true
+dependencies: {  }
+name: cart_
+label: 'Cart image'
+effects:
+  4987978e-172b-451f-8cd1-67f98ae4988c:
+    uuid: 4987978e-172b-451f-8cd1-67f98ae4988c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 80
+      height: 92
