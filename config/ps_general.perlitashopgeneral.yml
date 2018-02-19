@@ -4,3 +4,6 @@ google-plus: 'https://plus.google.com/discover'
 linkedin: 'https://www.linkedin.com/uas/login'
 instagram: 'https://www.instagram.com/?hl=en'
 langcode: sl
+menus:
+  categories: categories
+  support: support

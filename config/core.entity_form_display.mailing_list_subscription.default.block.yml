@@ -1,0 +1,33 @@
+uuid: 31dd6c28-752e-4b9e-945d-9cb0deace63a
+langcode: sl
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.mailing_list_subscription.block
+    - mailing_list.mailing_list.default
+id: mailing_list_subscription.default.block
+targetEntityType: mailing_list_subscription
+bundle: default
+mode: block
+content:
+  email:
+    type: email_default
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  status: true
+  uid: true

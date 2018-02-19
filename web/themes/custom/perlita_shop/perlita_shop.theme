@@ -74,6 +74,9 @@ function perlita_shop_preprocess_block(array &$variables) {
   elseif (isset($variables['elements']['#id']) && $variables['elements']['#id'] == 'usermenublock') {
     $variables['attributes']['class'][] = 'col-md-3 col-sm-4 col-xs-6 text-right text-sm text-res';
   }
+  elseif (isset($variables['elements']['#id']) && $variables['elements']['#id'] == 'footernavigationblock') {
+    $variables['attributes']['class'][] = 'col-md-7 col-sm-7';
+  }
 }
 
 /**

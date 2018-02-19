@@ -38,5 +38,12 @@ function ps_footer_theme() {
     ],
   ];
 
+  $templates['ps_footer_navigation_block'] = [
+    'file' => 'includes/theme.inc',
+    'variables' => [
+      'menus' => [],
+    ],
+  ];
+
   return $templates;
 }
