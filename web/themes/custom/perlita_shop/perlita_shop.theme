@@ -5,6 +5,8 @@
  * Functions to support theming in the perlita_shop theme.
  */
 
+use Drupal\Core\Datetime\DrupalDateTime;
+
 /**
  * Implements hook_preprocess_HOOK() for html.html.twig.
  */
@@ -63,14 +65,14 @@ function perlita_shop_theme_suggestions_node_alter(array &$suggestions, array $v
  * Implements hook_preprocess_HOOK() for Block document templates.
  */
 function perlita_shop_preprocess_block(array &$variables) {
-  if (isset($variables['elements']['#id']) && $variables['elements']['#id'] == 'perlita_shop_branding') {
-    $variables['attributes']['class'][] = 'col-md-3 col-lg-3  col-sm-4 col-xs-4';
+  if (isset($variables['elements']['#id']) && $variables['elements']['#id'] == 'logo_block') {
+    $variables['attributes']['class'][] = 'col-md-3 col-sm-4 col-xs-4';
   }
   elseif (isset($variables['elements']['#id']) && $variables['elements']['#id'] == 'mainmenublock') {
-    $variables['attributes']['class'][] = 'col-md-6 col-lg-6 col-sm-2 col-xs-2 text-center';
+    $variables['attributes']['class'][] = 'col-md-6 col-sm-4  col-xs-2 text-center';
   }
   elseif (isset($variables['elements']['#id']) && $variables['elements']['#id'] == 'usermenublock') {
-    $variables['attributes']['class'][] = 'col-md-3 col-lg-3 col-xs-6 col-sm-6 text-right text-sm text-res';
+    $variables['attributes']['class'][] = 'col-md-3 col-sm-4 col-xs-6 text-right text-sm text-res';
   }
 }
 
@@ -172,4 +174,14 @@ function perlita_shop_preprocess_commerce_product(&$variables) {
     $variables['images'][$index]['image'] = $variables['product']['field_slika'][$index];
     $variables['images'][$index]['id'] = $image['target_id'];
   }
+}
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function perlita_shop_preprocess_node__article__teaser(&$variables) {
+  $node = $variables['elements']['#node'];
+  $date = $node->getCreatedTime();
+  $format = 'l j, Y';
+  $variables['date'] = \Drupal::service('date.formatter')->format($date, 'custom', $format);
 }

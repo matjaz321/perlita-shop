@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Contains ps_footer.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ps_footer_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ps_footer module.
+    case 'help.page.ps_footer':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module for footer') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ps_footer_theme() {
+  $templates = [];
+
+  $templates['ps_footer_logo_block'] = [
+    'file' => 'includes/theme.inc',
+    'variables' => [
+      'url' => [],
+      'site_slogan' => [],
+      'social_media' => [],
+    ],
+  ];
+
+  return $templates;
+}

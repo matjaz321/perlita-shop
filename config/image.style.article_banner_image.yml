@@ -1,0 +1,14 @@
+uuid: bd4e75ff-7c49-418c-b732-1e42563723dc
+langcode: en
+status: true
+dependencies: {  }
+name: article_banner_image
+label: 'Article banner image'
+effects:
+  a3aaa3cf-fe8d-450c-aaca-a07e32c53900:
+    uuid: a3aaa3cf-fe8d-450c-aaca-a07e32c53900
+    id: image_resize
+    weight: 1
+    data:
+      width: 1170
+      height: 360

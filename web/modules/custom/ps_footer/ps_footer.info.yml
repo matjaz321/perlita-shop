@@ -1,0 +1,5 @@
+name: 'ps_footer'
+type: module
+description: 'Module for footer'
+core: 8.x
+package: 'Perlita-Shop'

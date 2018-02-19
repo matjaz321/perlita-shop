@@ -1,0 +1,5 @@
+name: 'ps_general'
+type: module
+description: 'Perlita shop general module which contains settings.'
+core: 8.x
+package: 'Perlita-Shop'

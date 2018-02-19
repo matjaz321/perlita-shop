@@ -1,0 +1,16 @@
+<div class="col-md-2 col-sm-5">
+    <div class="footer-logo">
+        <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+            <img src="{{ url }}" alt="{{ 'Home'|t }}"/>
+        </a>
+        <p>{{ site_slogan }}</p>
+        {% if social_media %}
+            <ul>
+                {% for value in social_media %}
+                    <li><a href="{{ value.url }}"><i class="fa fa-{{ value.platform }}"></i></a></li>
+                {% endfor %}
+
+            </ul>
+        {% endif %}
+    </div>
+</div>

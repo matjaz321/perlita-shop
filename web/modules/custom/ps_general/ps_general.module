@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains ps_general.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ps_general_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ps_general module.
+    case 'help.page.ps_general':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Perlita shop general module which contains settings.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

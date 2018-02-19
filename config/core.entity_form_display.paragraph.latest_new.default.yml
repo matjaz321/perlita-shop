@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.latest_new.field_latest_news
+    - field.field.paragraph.latest_new.field_subtitle
+    - field.field.paragraph.latest_new.field_title
     - paragraphs.paragraphs_type.latest_new
 id: paragraph.latest_new.default
 targetEntityType: paragraph
@@ -11,13 +13,29 @@ bundle: latest_new
 mode: default
 content:
   field_latest_news:
-    weight: 0
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true

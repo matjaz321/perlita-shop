@@ -104,22 +104,12 @@
         {% endif %}
     </div>
   </main>
-    {% if page.footer_col1 or page.footer_col2 or page.footer_col3 %}
-      <footer id="site-footer-3col" role="contentinfo">
-        <section class="outer-wrapper">
-          <div class="footer-3col">
-              {{ page.footer_col1 }}
-              {{ page.footer_col2 }}
-              {{ page.footer_col3 }}
-          </div>
-        </section>
-      </footer>
-    {% endif %}
-    {% if page.footer %}
-      <footer id="site-footer" role="contentinfo">
-        <section class="footer outer-wrapper">
-            {{ page.footer }}
-        </section>
+    {% if page.footer_col1 or page.footer_col2 or page.footer_col3 or page.footer %}
+      <footer class="footer-area">
+          {{ page.footer_col1 }}
+          {{ page.footer_col2 }}
+          {{ page.footer_col3 }}
+          {{ page.footer }}
       </footer>
     {% endif %}
 </div>

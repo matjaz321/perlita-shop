@@ -25,6 +25,8 @@ module:
   commerce_store: 0
   commerce_tax: 0
   config: 0
+  config_filter: 0
+  config_ignore: 0
   config_translation: 0
   contact: 0
   contextual: 0
@@ -76,6 +78,8 @@ module:
   path: 0
   physical: 0
   profile: 0
+  ps_footer: 0
+  ps_general: 0
   ps_landing_page_components: 0
   ps_main_menu: 0
   quickedit: 0

@@ -1,0 +1,11 @@
+
+ps_general.perlita_shop_general_form:
+  path: '/admin/ps_general'
+  defaults:
+    _form: '\Drupal\ps_general\Form\PerlitaShopGeneralForm'
+    _title: 'PerlitaShopGeneralForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

@@ -1,0 +1,20 @@
+uuid: 5435664f-8419-44e5-ac4e-05d273a06830
+langcode: en
+status: true
+dependencies:
+  module:
+    - ps_footer
+  theme:
+    - perlita_shop
+id: footerlogoblock
+theme: perlita_shop
+region: footer_col1
+weight: 0
+provider: null
+plugin: footer_logo_block
+settings:
+  id: footer_logo_block
+  label: 'Footer logo block'
+  provider: ps_footer
+  label_display: '0'
+visibility: {  }

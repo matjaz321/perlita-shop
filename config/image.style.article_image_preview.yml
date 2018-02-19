@@ -1,0 +1,14 @@
+uuid: 3e12ab1d-d1a9-40ae-9029-461729721b7f
+langcode: sl
+status: true
+dependencies: {  }
+name: article_image_preview
+label: 'Article Image Preview'
+effects:
+  c34857b2-376b-4500-bf82-3a71b8ddf700:
+    uuid: c34857b2-376b-4500-bf82-3a71b8ddf700
+    id: image_resize
+    weight: 1
+    data:
+      width: 370
+      height: 370

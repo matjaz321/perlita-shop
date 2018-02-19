@@ -1,0 +1,7 @@
+ps_general.perlita_shop_general_form:
+  title: 'Perlita Shop General'
+  route_name: ps_general.perlita_shop_general_form
+  description: 'General settings for Perlita Shop site.'
+  parent: system.admin
+  weight: 99
+
