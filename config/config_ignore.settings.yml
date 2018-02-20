@@ -1,5 +1,6 @@
 ignored_config_entities:
-  - 'system.menu.*'
+  0: 'system.menu.*'
+  2: ps_general.perlitashopgeneral
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 langcode: sl

@@ -91,10 +91,10 @@ function ps_main_menu_preprocess_commerce_cart_block(&$variables) {
 /**
  * Implements hook_preprocess_hook().
  */
-/*function ps_main_menu_preprocess_views_view_fields__commerce_cart_block__default(&$variables) {
+function ps_main_menu_preprocess_views_view_fields__commerce_cart_block__default(&$variables) {
   // Get product from view field and load product url.
   $product_id = $variables['fields']['product_id'];
-  if ($product_id) {
+  if (!empty($product_id)) {
     $product_id = $product_id->content;
     $id = $product_id->jsonSerialize();
     $product = Product::load($id);
@@ -118,9 +118,7 @@ function ps_main_menu_preprocess_commerce_cart_block(&$variables) {
     'order' => $order->id(),
     'order_item' => $order_item->id(),
   ])->toString();
-
-
-}*/
+}
 
 /**
  * Implements hook_preprocess_hook().

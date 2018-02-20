@@ -5,6 +5,7 @@ twitter: 'https://twitter.com/'
 google-plus: ''
 linkedin: 'https://www.linkedin.com/uas/login'
 instagram: 'https://www.instagram.com/?hl=en'
-menu_categories: 1
+menu_categories: 0
 menu_quick-links: 1
-menu_support: 1
+menu_support: 0
+menu_test: 1
