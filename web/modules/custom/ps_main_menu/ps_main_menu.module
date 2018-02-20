@@ -96,18 +96,20 @@ function ps_main_menu_preprocess_views_view_fields__commerce_cart_block__default
   if (isset($variables['row']) && !empty($variables['row'])) {
     $product_id = $variables['fields']['product_id']->handler;
     $row = $variables['row'];
-    $id = $product_id->getValue($row);
-    $product = Product::load($id);
-    if ($product) {
-      $variables['url'] = $product->url();
-      // Render first image.
-      $image = File::load($product->field_slika[0]->target_id);
-      $url = $image->getFileUri();
-      $variables['image'] = [
-        '#theme' => 'image_style',
-        '#style_name' => 'cart_',
-        '#uri' => $url,
-      ];
+    if ($row instanceof \Drupal\views\ResultRow) {
+      $id = $product_id->getValue($row);
+      $product = Product::load($id);
+      if ($product) {
+        $variables['url'] = $product->url();
+        // Render first image.
+        $image = File::load($product->field_slika[0]->target_id);
+        $url = $image->getFileUri();
+        $variables['image'] = [
+          '#theme' => 'image_style',
+          '#style_name' => 'cart_',
+          '#uri' => $url,
+        ];
+      }
     }
   }
   $row = $variables['row'];
