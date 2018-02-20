@@ -5,20 +5,20 @@
       <div class="col-md-5 col-sm-6 col-xs-12 mb-40">
         <!-- Tab panes -->
         <div class="tab-content mb-10">
-          {% for index, image in images %}
-            <div class="pro-large-img tab-pane" id="{{ image.id }}">
-                {{ product.field_slika[index] }}
+          {#{% for index, image in images %}#}
+            <div class="pro-large-img tab-pane active">
+                {{ product.field_slika[0] }}
             </div>
-          {% endfor %}
+          {#{% endfor %}#}
         </div>
-        <!-- QuickView Product Thumbnail Slider -->
-        <div class="pro-thumb-img-slider">
-            {% for index, image in images %}
-              <div class="pro-large-img tab-pane" id="{{ image.id }}">
-                <div><a href="#{{ image.id }}" data-toggle="tab">{{ product.field_slika[index] }}</a></div>
-              </div>
-            {% endfor %}
-        </div>
+        {#<!-- QuickView Product Thumbnail Slider -->#}
+        {#<div class="pro-thumb-img-slider">#}
+            {#{% for index, image in images %}#}
+              {#<div class="pro-large-img tab-pane" id="{{ image.id }}">#}
+                {#<div><a href="#{{ image.id }}" data-toggle="tab">{{ product.field_slika[index] }}</a></div>#}
+              {#</div>#}
+            {#{% endfor %}#}
+        {#</div>#}
       </div>
       <!-- QuickView Product Details -->
       <div class="col-md-7 col-sm-6 col-xs-12 mb-40">
