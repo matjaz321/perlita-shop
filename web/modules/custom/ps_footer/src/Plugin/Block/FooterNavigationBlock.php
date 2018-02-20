@@ -57,14 +57,7 @@ class FooterNavigationBlock extends BlockBase implements ContainerFactoryPluginI
    * @param \Drupal\Core\Config\ConfigFactory $config_factory
    *   The config factory.
    */
-  public function __construct(
-    array $configuration,
-    $plugin_id,
-    $plugin_definition,
-    EntityTypeManager $entity_type_manager,
-    MenuLinkTree $menu_link_tree,
-    ConfigFactory $config_factory
-  ) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityTypeManager $entity_type_manager, MenuLinkTree $menu_link_tree, ConfigFactory $config_factory) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->entityTypeManager = $entity_type_manager;
     $this->menuLinkTree = $menu_link_tree;
@@ -75,24 +68,45 @@ class FooterNavigationBlock extends BlockBase implements ContainerFactoryPluginI
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
-    return new static(
-      $configuration,
-      $plugin_id,
-      $plugin_definition,
-      $container->get('entity_type.manager'),
-      $container->get('menu.link_tree'),
-      $container->get('config.factory')
-    );
+    return new static($configuration, $plugin_id, $plugin_definition, $container->get('entity_type.manager'), $container->get('menu.link_tree'), $container->get('config.factory'));
+  }
+
+  /**
+   * Returns string after certain word.
+   *
+   * @param string $string
+   *   Input.
+   * @param string $substring
+   *   Cut.
+   *
+   * @return bool|string
+   *   Return string.
+   */
+  private function strafter($string, $substring) {
+    $pos = strpos($string, $substring);
+    if ($pos === FALSE) {
+      return $string;
+    }
+    else {
+      return (substr($string, $pos + strlen($substring)));
+    }
   }
 
   /**
    * {@inheritdoc}
    */
   public function build() {
-    $config = $this->configFactory->get('ps_general.perlitashopgeneral');
+    $config = $this->configFactory->getEditable('ps_general.perlitashopgeneral');
     $build = ['#theme' => 'ps_footer_navigation_block'];
-    if (!empty($config->get('menus'))) {
-      foreach ($config->get('menus') as $menu_name => $menu) {
+    $data = $config->getRawData();
+    $menu_names = [];
+    foreach ($data as $key => $value) {
+      if (strpos($key, 'menu_') !== FALSE && $data[$key] != FALSE) {
+        $menu_names[] = $this->strafter($key, 'menu_');
+      }
+    }
+    if (!empty($menu_names)) {
+      foreach ($menu_names as $menu_name) {
 
         // Load main menu tree.
         $parameters = $this->menuLinkTree->getCurrentRouteMenuTreeParameters($menu_name);
@@ -106,9 +120,9 @@ class FooterNavigationBlock extends BlockBase implements ContainerFactoryPluginI
         }
 
         // Check for access.
-        $manipulators = array(
-          array('callable' => 'menu.default_tree_manipulators:checkAccess'),
-        );
+        $manipulators = [
+          ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+        ];
 
         // Build menu.
         $tree = $this->menuLinkTree->transform($tree, $manipulators);
@@ -117,10 +131,17 @@ class FooterNavigationBlock extends BlockBase implements ContainerFactoryPluginI
         $menuItem = Menu::load($menu_name);
 
         $build['#menus'][] = [
-          //'title' => $menuItem->label(),
-          //'items' => $menu['#items'],
+          'title' => $menuItem->label(),
+          'items' => $menu['#items'],
+          'class' => 'col-md-4 col-sm-6',
         ];
       }
+      // Get last item of array, change calss, remove last item and
+      // set our new item to be the last.
+      $element = array_values(array_slice($build['#menus'], -1))[0];
+      $element['class'] = 'col-md-4 hidden-sm';
+      array_pop($build['#menus']);
+      array_push($build['#menus'], $element);
     }
 
     return $build;

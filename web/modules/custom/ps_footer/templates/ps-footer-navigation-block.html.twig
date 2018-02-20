@@ -1,17 +1,17 @@
 <div class="row">
     {% if menus %}
         {% for menu in menus %}
-            <div class="col-md-4 col-sm-6">
+            <div class="{{ menu.class }}">
                 <div class="footer-title res-mrg">
-                    {#<h3>{{ menu.title }}</h3>#}
+                    <h3>{{ menu.title }}</h3>
                     {% if menu.items %}
                         <div class="footer-menu">
                             <ul>
-                                {#{% for item in menu.items %}#}
-                                    {#<li>#}
-                                        {#<a href="{{ item.url }}">{{ item.title }}</a>#}
-                                    {#</li>#}
-                                {#{% endfor %}#}
+                                {% for item in menu.items %}
+                                    <li>
+                                        <a href="{{ item.url }}">{{ item.title }}</a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     {% endif %}

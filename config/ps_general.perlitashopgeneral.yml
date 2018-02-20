@@ -1,9 +1,10 @@
+quick-links: 1
+support: 1
 facebook: 'https://www.facebook.com/'
-twitter: ''
-google-plus: 'https://plus.google.com/discover'
+twitter: 'https://twitter.com/'
+google-plus: ''
 linkedin: 'https://www.linkedin.com/uas/login'
 instagram: 'https://www.instagram.com/?hl=en'
-langcode: sl
-menus:
-  categories: categories
-  support: support
+menu_categories: 1
+menu_quick-links: 1
+menu_support: 1

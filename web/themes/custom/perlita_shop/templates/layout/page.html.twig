@@ -48,68 +48,72 @@
 #}
 
 <div role="document" class="waraper">
-    {%  if page.top %}
-      <header>
-        <div class="header-area">
-            <div class="container-fluid">
-                <div class="row">
-                    {{ page.top }}
+    {% if page.top %}
+        <header>
+            <div class="header-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        {{ page.top }}
+                    </div>
+                    <div class="mobile-menu"></div>
                 </div>
-                <div class="mobile-menu"></div>
             </div>
-        </div>
-      </header>
+        </header>
     {% endif %}
 
     {% if messages %}
-      <section id="messages">
-        <div class="outer-wrapper">
-            {{ messages }}
-        </div>
-      </section>
+        <section id="messages">
+            <div class="outer-wrapper">
+                {{ messages }}
+            </div>
+        </section>
     {% endif %}
 
     {% if breadcrumb %}
-      <section id="breadcrumb">
-        <div class="outer-wrapper">
-            {{ breadcrumb }}
-        </div>
-      </section>
+        <section id="breadcrumb">
+            <div class="outer-wrapper">
+                {{ breadcrumb }}
+            </div>
+        </section>
     {% endif %}
     {% if page.page_title %}
-      <section id="page-title">
-        <div class="outer-wrapper">
-            {{ page.page_title }}
-        </div>
-      </section>
+        <section id="page-title">
+            <div class="outer-wrapper">
+                {{ page.page_title }}
+            </div>
+        </section>
     {% endif %}
-  <main role="main">
-    <div class="outer-wrapper">
-        {% if page.sidebar_first %}
-          <aside id="sidebar-first" role="complementary" class="sidebar">
-              {{ page.sidebar_first }}
-          </aside>
-        {% endif %}
+    <main role="main">
+        <div class="outer-wrapper">
+            {% if page.sidebar_first %}
+                <aside id="sidebar-first" role="complementary" class="sidebar">
+                    {{ page.sidebar_first }}
+                </aside>
+            {% endif %}
 
-        {% if page.content %}
-          <section id="content">
-              {{ page.content }}
-          </section>
-        {% endif %}
+            {% if page.content %}
+                <section id="content">
+                    {{ page.content }}
+                </section>
+            {% endif %}
 
-        {% if page.sidebar_second %}
-          <aside id="sidebar-second" role="complementary" class="sidebar">
-              {{ page.sidebar_second }}
-          </aside>
-        {% endif %}
-    </div>
-  </main>
+            {% if page.sidebar_second %}
+                <aside id="sidebar-second" role="complementary" class="sidebar">
+                    {{ page.sidebar_second }}
+                </aside>
+            {% endif %}
+        </div>
+    </main>
     {% if page.footer_col1 or page.footer_col2 or page.footer_col3 or page.footer %}
-      <footer class="footer-area">
-          {{ page.footer_col1 }}
-          {{ page.footer_col2 }}
-          {{ page.footer_col3 }}
-          {{ page.footer }}
-      </footer>
+        <footer class="footer-area">
+            <div class="container-fluid">
+                {{ page.footer_col1 }}
+                {{ page.footer_col2 }}
+                {{ page.footer_col3 }}
+            </div>
+            <div class="container-fluid">
+                {{ page.footer }}
+            </div>
+        </footer>
     {% endif %}
 </div>

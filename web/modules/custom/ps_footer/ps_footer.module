@@ -45,5 +45,10 @@ function ps_footer_theme() {
     ],
   ];
 
+  $templates['ps_copyright_block'] = [
+    'file' => 'includes/theme.inc',
+    'variables' => [],
+  ];
+
   return $templates;
 }

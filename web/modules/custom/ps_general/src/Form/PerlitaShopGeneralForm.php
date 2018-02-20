@@ -101,11 +101,12 @@ class PerlitaShopGeneralForm extends ConfigFormBase {
       '#description' => $this->t('Provide linwatermeternummerk to your Instagram account.'),
       '#default_value' => $config->get('instagram'),
     ];
-    $form['footer_settings'] = [
+    $form['footer_settings']['menus'] = [
       '#type' => 'fieldset',
       '#title' => $this->t('Footer menu settings'),
       '#description' => $this->t('Choose one of the footer menus down bellow and they will be displayed in the middle section of the footer.'),
     ];
+
     $menus = Menu::loadMultiple();
     $ignored = [
       'account',
@@ -115,17 +116,15 @@ class PerlitaShopGeneralForm extends ConfigFormBase {
       'tools',
     ];
 
-    $options = [];
     foreach ($menus as $menu) {
       if (!in_array($menu->id(), $ignored)) {
-        $options[$menu->id()] = $menu->label();
+        $form['footer_settings']['menus'][$menu->id()] = array(
+          '#type' => 'checkbox',
+          '#title' => $menu->label(),
+          '#default_value' => $config->get('menu_' . $menu->id()),
+        );
       }
     }
-    $form['footer_settings']['menus'] = [
-      '#type' => 'checkboxes',
-      '#options' => $options,
-      '#default_value' => !empty($config->get('menus')) ? $config->get('menus') : [],
-    ];
     return parent::buildForm($form, $form_state);
   }
 
@@ -142,17 +141,20 @@ class PerlitaShopGeneralForm extends ConfigFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     parent::submitForm($form, $form_state);
 
-    $config = $this->config('ps_general.perlitashopgeneral');
+    $menus = Menu::loadMultiple();
+    $ignored = [
+      'account',
+      'admin',
+      'footer',
+      'main',
+      'tools',
+    ];
 
-    $config->clear('menus')->save();
-    $menus = $form_state->getValue('menus');
+    $config = $this->configFactory->getEditable('ps_general.perlitashopgeneral');
 
-    $options = [];
-    if (!empty($menus)) {
-      foreach ($menus as $name => $value) {
-        if ($value != FALSE) {
-          array_push($options, $name);
-        }
+    foreach ($menus as $menu) {
+      if (!in_array($menu->id(), $ignored)) {
+        $config->set('menu_' . $menu->id(), $form_state->getValue($menu->id()));
       }
     }
 
@@ -162,7 +164,6 @@ class PerlitaShopGeneralForm extends ConfigFormBase {
       ->set('google-plus', $form_state->getValue('google_plus'))
       ->set('linkedin', $form_state->getValue('linkedin'))
       ->set('instagram', $form_state->getValue('instagram'))
-      //->set('menus', ['categories', 'quick_links'])
       ->save();
   }
 
