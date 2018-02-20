@@ -1,0 +1,14 @@
+uuid: f2b98821-a70b-43a3-bbd1-4113731ee3e4
+langcode: sl
+status: true
+dependencies: {  }
+name: product2
+label: PRoduct2
+effects:
+  5c882b62-7c48-4890-a620-ca39f6998de8:
+    uuid: 5c882b62-7c48-4890-a620-ca39f6998de8
+    id: image_resize
+    weight: 1
+    data:
+      width: 500
+      height: 550
