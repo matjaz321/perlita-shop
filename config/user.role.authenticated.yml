@@ -18,6 +18,7 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'subscribe to newsletters'
   - 'use text format basic_html'
   - 'view commerce_product'
   - 'view published landing page components entities'

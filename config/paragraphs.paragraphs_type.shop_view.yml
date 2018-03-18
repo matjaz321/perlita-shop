@@ -1,0 +1,9 @@
+uuid: 1d2843c3-4b3d-4d93-8966-9c4c761694a8
+langcode: en
+status: true
+dependencies: {  }
+id: shop_view
+label: 'Shop view'
+icon_uuid: null
+description: 'Displays show view'
+behavior_plugins: {  }

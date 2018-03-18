@@ -72,9 +72,7 @@
 #}
 <div class="col-md-3 col-sm-6">
   <div class="single-blog mb-30">
-    <a href="{{ url }}">
-      {{ content.field_preview_image }}
-    </a>
+    <img src="{{ image.url }}" alt="{{ image.alt }}">
     <div class="blog-title">
       <span>{{ date }}</span>
       <h3><a href="{{ url }}" rel="bookmark">{{ label }}</a></h3>

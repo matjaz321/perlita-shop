@@ -1,0 +1,20 @@
+uuid: 6862050f-0957-4747-a683-d93859c18d7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - ps_landing_page_components
+id: paragraph.field_cta_images
+field_name: field_cta_images
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: landing_page_components
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

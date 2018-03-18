@@ -1,0 +1,19 @@
+uuid: b44f6151-784e-40f4-b64d-caff6aeec375
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - ps_landing_page_components
+id: landing_page_components.field_cta
+field_name: field_cta
+entity_type: landing_page_components
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

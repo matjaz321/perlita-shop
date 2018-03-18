@@ -1,0 +1,22 @@
+uuid: 46ea3eec-920f-400b-94d9-172c88a364ce
+langcode: sl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_image.field_cta_images
+    - paragraphs.paragraphs_type.cta_image
+id: paragraph.cta_image.default
+targetEntityType: paragraph
+bundle: cta_image
+mode: default
+content:
+  field_cta_images:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

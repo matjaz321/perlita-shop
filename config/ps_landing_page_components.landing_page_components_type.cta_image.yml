@@ -1,0 +1,6 @@
+uuid: a93a7594-2662-40e9-9a6a-d1fa3529743d
+langcode: en
+status: true
+dependencies: {  }
+id: cta_image
+label: 'CTA Image'

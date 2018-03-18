@@ -9,7 +9,6 @@ dependencies:
     - field.field.commerce_product.default.field_slika
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
-    - image.style.product2
   module:
     - commerce_product
     - image
@@ -40,7 +39,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: product2
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image

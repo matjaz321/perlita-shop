@@ -1,0 +1,28 @@
+uuid: 77103b95-c0ed-4bd4-94ac-0934a9cb0a5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_images
+    - paragraphs.paragraphs_type.cta_image
+    - ps_landing_page_components.landing_page_components_type.cta_image
+id: paragraph.cta_image.field_cta_images
+field_name: field_cta_images
+entity_type: paragraph
+bundle: cta_image
+label: 'CTA Images'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:landing_page_components'
+  handler_settings:
+    target_bundles:
+      cta_image: cta_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 603cd074-01a8-41cc-b2b3-1eb1b4161e72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.landing_page_components.field_cta
+    - ps_landing_page_components.landing_page_components_type.cta_image
+  module:
+    - link
+id: landing_page_components.cta_image.field_cta
+field_name: field_cta
+entity_type: landing_page_components
+bundle: cta_image
+label: CTA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

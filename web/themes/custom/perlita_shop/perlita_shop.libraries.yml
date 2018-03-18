@@ -8,6 +8,7 @@ perlita_shop:
     js/isotope.pkgd.min.js: {}
     js/imagesloaded.pkgd.min.js: {}
     js/owl.carousel.min.js: {}
+    js/jquery.meanmenu.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once

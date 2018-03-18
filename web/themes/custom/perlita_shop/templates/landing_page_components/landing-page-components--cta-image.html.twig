@@ -1,0 +1,28 @@
+{#
+/**
+ * @file landing_page_components.html.twig
+ * Default theme implementation to present Landing page components data.
+ *
+ * This template is used when viewing Landing page components pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_landing_page_components()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="col-md-4">
+    <div class="single-banner">
+        {% if content %}
+            <img src="{{ image.url }}" alt="{{ image.alt }}">
+            <div class="single-banner-title">
+                <h3>{{ content.field_subtitle.0 }}</h3>
+                {{ content.field_cta.0 }}
+            </div>
+        {% endif %}
+    </div>
+</div>

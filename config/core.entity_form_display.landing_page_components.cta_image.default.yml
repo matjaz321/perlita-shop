@@ -1,0 +1,71 @@
+uuid: 44604b01-d509-43d7-aad6-c3c7abcc2491
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.landing_page_components.cta_image.field_cta
+    - field.field.landing_page_components.cta_image.field_image
+    - field.field.landing_page_components.cta_image.field_subtitle
+    - ps_landing_page_components.landing_page_components_type.cta_image
+  module:
+    - inline_entity_form
+    - link
+id: landing_page_components.cta_image.default
+targetEntityType: landing_page_components
+bundle: cta_image
+mode: default
+content:
+  field_cta:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_image:
+    weight: 6
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_subtitle:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

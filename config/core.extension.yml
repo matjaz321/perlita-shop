@@ -21,7 +21,6 @@ module:
   commerce_price: 0
   commerce_product: 0
   commerce_promotion: 0
-  commerce_shipping: 0
   commerce_store: 0
   commerce_tax: 0
   config: 0
@@ -35,7 +34,6 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
-  email_confirmer: 0
   email_registration: 0
   entity: 0
   entity_reference_revisions: 0
@@ -91,6 +89,7 @@ module:
   search_api_db: 0
   serialization: 0
   shortcut: 0
+  simplenews: 0
   social_api: 0
   social_auth: 0
   social_auth_facebook: 0

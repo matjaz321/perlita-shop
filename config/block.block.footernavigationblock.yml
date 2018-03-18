@@ -1,0 +1,20 @@
+uuid: 3b344f26-9d1e-483e-8c59-691042bfd132
+langcode: sl
+status: true
+dependencies:
+  module:
+    - ps_footer
+  theme:
+    - perlita_shop
+id: footernavigationblock
+theme: perlita_shop
+region: footer_col2
+weight: 0
+provider: null
+plugin: footer_navigation_block
+settings:
+  id: footer_navigation_block
+  label: 'Footer navigation block'
+  provider: ps_footer
+  label_display: '0'
+visibility: {  }

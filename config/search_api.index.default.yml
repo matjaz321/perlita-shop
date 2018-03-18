@@ -1,0 +1,88 @@
+uuid: d928a26b-8356-4541-9ba9-f0fbd762cb2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.body
+    - field.storage.commerce_product.field_kategorija
+    - search_api.server.default
+  module:
+    - search_api
+    - commerce_product
+id: default
+name: Default
+description: ''
+read_only: false
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: text
+  body:
+    label: Body
+    datasource_id: 'entity:commerce_product'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.body
+  body_1:
+    label: Body
+    datasource_id: 'entity:commerce_product'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.body
+  field_kategorija:
+    label: Kategorija
+    datasource_id: 'entity:commerce_product'
+    property_path: field_kategorija
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_kategorija
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  rendered_item: {  }
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  tokenizer:
+    all_fields: false
+    fields:
+      - title
+      - body
+      - body_1
+      - field_kategorija
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+  ignorecase:
+    all_fields: false
+    fields:
+      - title
+      - body
+      - body_1
+      - field_kategorija
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: default

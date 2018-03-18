@@ -1,0 +1,24 @@
+uuid: 0d0150b0-3fa5-465d-a545-adf5d30010ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - simplenews
+  theme:
+    - perlita_shop
+id: simplenewssubscription
+theme: perlita_shop
+region: footer_col3
+weight: 0
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: NEWSLETTER
+  provider: simplenews
+  label_display: visible
+  newsletters:
+    default: default
+  message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.'
+  unique_id: newsletter
+visibility: {  }

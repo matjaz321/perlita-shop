@@ -1,0 +1,49 @@
+uuid: 0893d76b-ce66-47ab-84fa-2dbf44da1696
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.landing_page_components.cta_image.field_cta
+    - field.field.landing_page_components.cta_image.field_image
+    - field.field.landing_page_components.cta_image.field_subtitle
+    - ps_landing_page_components.landing_page_components_type.cta_image
+  module:
+    - link
+id: landing_page_components.cta_image.default
+targetEntityType: landing_page_components
+bundle: cta_image
+mode: default
+content:
+  field_cta:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  name: true
+  user_id: true

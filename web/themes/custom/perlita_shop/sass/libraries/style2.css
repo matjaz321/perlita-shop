@@ -236,6 +236,9 @@ h1.cart-heading {
 .table-content table td.product-thumbnail {
     width: 130px;
 }
+.table-content table td.product-thumbnail img {
+    max-width: 80px;
+}
 .table-content table td.product-remove i {
     color: #919191;
     display: inline-block;
@@ -1258,7 +1261,10 @@ a#scrollUp:hover {
     background: #000 none repeat scroll 0 0;
 }
 
-
+.centered-text {
+    text-align: center;
+    color: #fff;
+}
 
 
 

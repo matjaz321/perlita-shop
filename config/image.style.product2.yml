@@ -5,10 +5,11 @@ dependencies: {  }
 name: product2
 label: PRoduct2
 effects:
-  5c882b62-7c48-4890-a620-ca39f6998de8:
-    uuid: 5c882b62-7c48-4890-a620-ca39f6998de8
-    id: image_resize
+  39f62b2e-db83-4324-ac30-9b31e5b0a3a8:
+    uuid: 39f62b2e-db83-4324-ac30-9b31e5b0a3a8
+    id: image_scale
     weight: 1
     data:
-      width: 500
-      height: 550
+      width: 380
+      height: 450
+      upscale: true

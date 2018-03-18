@@ -1,0 +1,9 @@
+uuid: 5139028f-4dbe-4ee9-aa14-d844fcf49bf7
+langcode: sl
+status: true
+dependencies: {  }
+id: cta_image
+label: 'CTA Image'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

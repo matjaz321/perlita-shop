@@ -1679,8 +1679,3 @@ textarea:focus {
 .socile-icon-tooltip .tooltip-top:focus::after {
     transform: translateY(-25px);
 }
-
-.centered-text {
-    text-align: center;
-    color: #fff;
-}

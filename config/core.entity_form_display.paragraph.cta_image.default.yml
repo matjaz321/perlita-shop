@@ -1,0 +1,31 @@
+uuid: b98b0543-29f1-4871-8b0c-317ec868fd5b
+langcode: sl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_image.field_cta_images
+    - paragraphs.paragraphs_type.cta_image
+  module:
+    - inline_entity_form
+id: paragraph.cta_image.default
+targetEntityType: paragraph
+bundle: cta_image
+mode: default
+content:
+  field_cta_images:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

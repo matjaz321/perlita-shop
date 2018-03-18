@@ -1,0 +1,19 @@
+uuid: d255d61d-5804-4c34-b30c-950d9973c8fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.landing_page_components.field_subtitle
+    - ps_landing_page_components.landing_page_components_type.cta_image
+id: landing_page_components.cta_image.field_subtitle
+field_name: field_subtitle
+entity_type: landing_page_components
+bundle: cta_image
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,28 @@
+uuid: d2a78f5e-c769-4406-954e-98b804f9a353
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.landing_page_components.field_image
+    - media_entity.bundle.image
+    - ps_landing_page_components.landing_page_components_type.cta_image
+id: landing_page_components.cta_image.field_image
+field_name: field_image
+entity_type: landing_page_components
+bundle: cta_image
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
