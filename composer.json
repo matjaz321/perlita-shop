@@ -114,6 +114,9 @@
             },
             "drupal/commerce_shipping": {
                 "Issue #2849756: Auto-recalculate shipping when the address changes:": "https://www.drupal.org/files/issues/commerce_shipping-autorecalculate-2849756-45.patch"
+            },
+            "drupal/panels": {
+                "Issue #2923286: Fatal error in with PHP 7.2": "https://www.drupal.org/files/issues/2923286-12.patch"
             }
         }
     }
