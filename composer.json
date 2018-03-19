@@ -99,8 +99,7 @@
             },
             "drupal/core": {
                 "Default text formats not being saved": "https://www.drupal.org/files/issues/1278886-51-default-text-formats.patch",
-                "Title for details form elements should be #markup": "https://www.drupal.org/files/issues/2652850-11.patch",
-                "Private temp store start session for anonymous users": "https://www.drupal.org/files/issues/2743931-26.patch"
+                "Title for details form elements should be #markup": "https://www.drupal.org/files/issues/2652850-11.patch"
             },
             "drupal/paragraphs": {
                 "Issue #2461695: Support translatable paragraph entity reference revision field": "https://www.drupal.org/files/issues/meta_support-2461695-222.patch",
