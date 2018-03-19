@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: tS8PbpJX90aRFC3-UTgXzdqkq7_2frk2pz4TMijEebM
 id: content
-label: Content
+label: Vsebine
 module: node
 description: 'Find and manage content.'
 tag: default
@@ -31,7 +31,7 @@ display:
         options:
           submit_button: Filter
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: Ponastavi
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -161,7 +161,7 @@ display:
           id: title
           table: node_field_data
           field: title
-          label: Title
+          label: Naslov
           exclude: false
           alter:
             alter_text: false
@@ -184,7 +184,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Content type'
+          label: 'Tip vsebine'
           exclude: false
           alter:
             alter_text: false
@@ -247,7 +247,7 @@ display:
           table: users_field_data
           field: name
           relationship: uid
-          label: Author
+          label: Avtor
           exclude: false
           alter:
             alter_text: false
@@ -265,7 +265,7 @@ display:
           id: status
           table: node_field_data
           field: status
-          label: Status
+          label: Stanje
           exclude: false
           alter:
             alter_text: false
@@ -278,7 +278,7 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
+            format_custom_true: Objavljeno
             format_custom_false: Unpublished
           plugin_id: field
           entity_type: node
@@ -287,7 +287,7 @@ display:
           id: changed
           table: node_field_data
           field: changed
-          label: Updated
+          label: Posodobljeno
           exclude: false
           alter:
             alter_text: false
@@ -312,7 +312,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operacije
           exclude: false
           alter:
             alter_text: false
@@ -369,7 +369,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: Naslov
             description: ''
             use_operator: false
             operator: title_op
@@ -381,6 +381,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -409,7 +410,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: 'Tip vsebine'
             description: ''
             use_operator: false
             operator: type_op
@@ -450,7 +451,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Status
+            label: Stanje
             description: ''
             use_operator: false
             operator: status_op
@@ -473,7 +474,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Objavljeno
                 operator: '='
                 value: '1'
               2:
@@ -496,7 +497,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Jezik
             description: ''
             use_operator: false
             operator: langcode_op
@@ -534,14 +535,14 @@ display:
           group: 1
           entity_type: node
       sorts: {  }
-      title: Content
+      title: Vsebine
       empty:
         area_text_custom:
           id: area_text_custom
           table: views
           field: area_text_custom
           empty: true
-          content: 'No content available.'
+          content: 'Na voljo ni nobene vsebine.'
           plugin_id: text_custom
       arguments: {  }
       relationships:
@@ -578,20 +579,20 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Content
+        title: Vsebine
         description: ''
         menu_name: admin
         weight: -10
         context: ''
       tab_options:
         type: normal
-        title: Content
+        title: Vsebine
         description: 'Find and manage content'
         menu_name: admin
         weight: -10
       display_extenders: {  }
     display_plugin: page
-    display_title: Page
+    display_title: Stran
     id: page_1
     position: 1
     cache_metadata:

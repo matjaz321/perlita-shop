@@ -41,7 +41,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: Ponastavi
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -99,7 +99,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Date
+          label: Datum
           exclude: false
           alter:
             alter_text: false
@@ -166,7 +166,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Message
+          label: Sporočilo
           exclude: false
           alter:
             alter_text: false
@@ -218,7 +218,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: User
+          label: Uporabnik
           exclude: false
           alter:
             alter_text: false
@@ -319,7 +319,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Vsi
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -356,7 +356,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Vsi
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -388,7 +388,7 @@ display:
           plugin_id: string
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -398,12 +398,12 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: Blok
     position: 1
     display_options:
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

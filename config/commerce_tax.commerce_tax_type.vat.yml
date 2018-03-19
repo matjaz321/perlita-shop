@@ -6,4 +6,4 @@ id: vat
 label: VAT
 plugin: european_union_vat
 configuration:
-  display_inclusive: true
+  display_inclusive: false

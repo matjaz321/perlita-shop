@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: o_8fSWHZOVIbydZACGsSX09DtuJhqkRmNOzcVj-4bQI
 id: who_s_new
-label: 'Who''s new'
+label: 'Novi uporabniki'
 module: user
 description: 'Shows a list of the newest user accounts on the site.'
 tag: default
@@ -41,7 +41,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: Ponastavi
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -129,6 +129,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -160,7 +163,7 @@ display:
           plugin_id: date
           entity_type: user
           entity_field: created
-      title: 'Who''s new'
+      title: 'Novi uporabniki'
       header: {  }
       footer: {  }
       empty: {  }
@@ -177,12 +180,12 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Who''s new'
+    display_title: 'Novi uporabniki'
     position: 1
     display_options:
       display_description: 'A list of new users'
-      block_description: 'Who''s new'
-      block_category: User
+      block_description: 'Novi uporabniki'
+      block_category: Uporabnik
       display_extenders: {  }
     cache_metadata:
       contexts:

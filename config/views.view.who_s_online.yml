@@ -41,7 +41,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: Ponastavi
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -126,8 +126,8 @@ display:
           exposed: false
           expose:
             operator_id: access_op
-            label: 'Last access'
-            description: 'A user is considered online for this long after they have last viewed a page.'
+            label: 'Zadnji dostop'
+            description: 'Uporabnik se smatra prijavljen še toliko časa po zadnjem ogledu strani.'
             use_operator: false
             operator: access_op
             identifier: access
@@ -138,6 +138,9 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -169,7 +172,7 @@ display:
           plugin_id: date
           entity_type: user
           entity_field: access
-      title: 'Who''s online'
+      title: 'Kdo je prijavljen'
       header:
         result:
           id: result
@@ -207,10 +210,10 @@ display:
   who_s_online_block:
     display_plugin: block
     id: who_s_online_block
-    display_title: 'Who''s online'
+    display_title: 'Kdo je prijavljen'
     position: 1
     display_options:
-      block_description: 'Who''s online'
+      block_description: 'Kdo je prijavljen'
       display_description: 'A list of users that are currently logged in.'
       display_extenders: {  }
     cache_metadata:

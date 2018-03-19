@@ -45,7 +45,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: Ponastavi
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -185,7 +185,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Action
+          action_title: Akcija
           include_exclude: exclude
           selected_actions: {  }
           entity_type: media
@@ -375,7 +375,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Author
+          label: Avtor
           exclude: false
           alter:
             alter_text: false
@@ -440,7 +440,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: Stanje
           exclude: false
           alter:
             alter_text: false
@@ -485,7 +485,7 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
+            format_custom_true: Objavljeno
             format_custom_false: Unpublished
           group_column: value
           group_columns: {  }
@@ -507,7 +507,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: Posodobljeno
           exclude: false
           alter:
             alter_text: false
@@ -574,7 +574,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operacije
           exclude: false
           alter:
             alter_text: false
@@ -655,7 +655,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Objavljeno
                 operator: '='
                 value: '1'
               2:
@@ -731,6 +731,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -759,7 +760,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Jezik
             description: ''
             use_operator: false
             operator: langcode_op
@@ -816,7 +817,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No content available.'
+          content: 'Na voljo ni nobene vsebine.'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }

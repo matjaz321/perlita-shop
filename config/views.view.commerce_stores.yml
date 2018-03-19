@@ -5,7 +5,6 @@ dependencies:
   module:
     - commerce
     - commerce_store
-    - system
     - user
 _core:
   default_config_hash: '-X1gJHmWCoN8z6urr4N2eYcfT9_kGyKMCoS1kh1IbPQ'
@@ -44,7 +43,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: Ponastavi
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -65,10 +64,10 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
           quantity: 9
       style:
         type: table
@@ -172,7 +171,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Name
+          label: Ime
           exclude: false
           alter:
             alter_text: false
@@ -237,7 +236,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Type
+          label: Tip
           exclude: false
           alter:
             alter_text: false
@@ -303,7 +302,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operacije
           exclude: false
           alter:
             alter_text: false
@@ -361,7 +360,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Type
+            label: Tip
             description: ''
             use_operator: false
             operator: type_op
@@ -422,7 +421,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Stran
     position: 1
     display_options:
       display_extenders: {  }

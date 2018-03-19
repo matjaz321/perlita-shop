@@ -5,7 +5,6 @@ dependencies:
   module:
     - commerce
     - commerce_product
-    - system
     - user
 _core:
   default_config_hash: lTfF_aenIIJ8YnvaratQgGpNEkFtA7tSDiElcgecVQo
@@ -44,7 +43,7 @@ display:
         options:
           submit_button: Filter
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: Ponastavi
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -65,10 +64,10 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
           quantity: 9
       style:
         type: table
@@ -188,7 +187,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
+          label: Naslov
           exclude: false
           alter:
             alter_text: false
@@ -253,7 +252,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Type
+          label: Tip
           exclude: false
           alter:
             alter_text: false
@@ -319,7 +318,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: Stanje
           exclude: false
           alter:
             alter_text: false
@@ -364,7 +363,7 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
+            format_custom_true: Objavljeno
             format_custom_false: Unpublished
           group_column: value
           group_columns: {  }
@@ -386,7 +385,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: Posodobljeno
           exclude: false
           alter:
             alter_text: false
@@ -453,7 +452,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operacije
           exclude: false
           alter:
             alter_text: false
@@ -511,7 +510,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Type
+            label: Tip
             description: ''
             use_operator: false
             operator: type_op
@@ -553,7 +552,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: Naslov
             description: ''
             use_operator: false
             operator: title_op
@@ -565,6 +564,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -612,7 +612,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Stran
     position: 1
     display_options:
       display_extenders: {  }
