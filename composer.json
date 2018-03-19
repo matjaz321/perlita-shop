@@ -109,7 +109,8 @@
             },
             "drupal/page_manager": {
                 "Issue #2874851: Clicking a variant in page manager does not open the variant config": "https://www.drupal.org/files/issues/page_manager-2874851-8.patch",
-                "Issue #2918564: Update 'page_manager.variant_route_filter' service according to core changes": "https://www.drupal.org/files/issues/2918564-22.patch"
+                "Issue #2918564: Update 'page_manager.variant_route_filter' service according to core changes": "https://www.drupal.org/files/issues/2918564-22.patch",
+                "Issue #2929896: PHP 7.2.0 fatal error": "https://www.drupal.org/files/issues/2929896-php72-fatal-2.patch"
             },
             "drupal/commerce_shipping": {
                 "Issue #2849756: Auto-recalculate shipping when the address changes:": "https://www.drupal.org/files/issues/commerce_shipping-autorecalculate-2849756-45.patch"
