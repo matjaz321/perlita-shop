@@ -37,6 +37,7 @@
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.2",
         "drupal/paragraphs": "^1.2",
+        "drupal/pathauto": "^1.1",
         "drupal/search_api": "^1.6",
         "drupal/simplenews": "^1.0@alpha",
         "drupal/social_auth": "^1.0",

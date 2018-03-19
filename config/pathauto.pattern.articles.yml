@@ -1,0 +1,22 @@
+uuid: 661440cb-bc4b-42c4-846f-11bb27bc766a
+langcode: sl
+status: true
+dependencies:
+  module:
+    - node
+id: articles
+label: Articles
+type: 'canonical_entities:node'
+pattern: 'clanek/[node:title]'
+selection_criteria:
+  fe1b864c-c382-4b2b-bf18-afca99b0e025:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fe1b864c-c382-4b2b-bf18-afca99b0e025
+selection_logic: and
+weight: -5
+relationships: {  }
