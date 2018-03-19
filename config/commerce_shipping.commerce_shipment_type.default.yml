@@ -1,0 +1,9 @@
+uuid: 756918a9-00f0-4cda-a37e-3727adacd755
+langcode: sl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-kHo7v74pJKVjJ6Nu_pM83E8Oc3PS8dnIksYpmt3fbY'
+id: default
+label: Default
+traits: {  }

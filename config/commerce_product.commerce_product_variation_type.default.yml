@@ -8,4 +8,5 @@ id: default
 label: Nakit
 orderItemType: default
 generateTitle: true
-traits: {  }
+traits:
+  - purchasable_entity_shippable

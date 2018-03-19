@@ -23,6 +23,7 @@
         "drupal/admin_toolbar": "^1.22",
         "drupal/adminimal_admin_toolbar": "^1.5",
         "drupal/commerce": "^2.3",
+        "drupal/commerce_shipping": "^2.0@beta",
         "drupal/config_ignore": "^2.1",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.4",
@@ -108,6 +109,9 @@
             },
             "drupal/page_manager": {
                 "Issue #2874851: Clicking a variant in page manager does not open the variant config": "https://www.drupal.org/files/issues/page_manager-2874851-8.patch"
+            },
+            "drupal/commerce_shipping": {
+                "Issue #2849756: Auto-recalculate shipping when the address changes:": "https://www.drupal.org/files/issues/commerce_shipping-autorecalculate-2849756-45.patch"
             }
         }
     }
