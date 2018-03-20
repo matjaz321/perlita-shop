@@ -172,7 +172,7 @@ function perlita_shop_theme_suggestions_alter(array &$suggestions, array $variab
  * Function implements hook_preprocess_hook().
  */
 function perlita_shop_preprocess_commerce_product(&$variables) {
-  $images = $variables['product']['field_slika']['#items'];
+  $images = isset($variables['product']['field_slika']['#items']) ? $variables['product']['field_slika']['#items'] : NULL;
   if (!empty($images)) {
       $images = $images->getValue();
       foreach ($images as $index => $image) {
