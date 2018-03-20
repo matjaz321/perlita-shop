@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Datetime\DrupalDateTime;
+use Drupal\file\Entity\File;
 
 /**
  * Implements hook_preprocess_HOOK() for html.html.twig.
@@ -179,6 +180,8 @@ function perlita_shop_preprocess_commerce_product(&$variables) {
     }
     $variables['images'][$index]['image'] = $variables['product']['field_slika'][$index];
     $variables['images'][$index]['id'] = $image['target_id'];
+    $variables['images'][$index]['url'] = file_create_url(File::load($image['target_id'])->url());
+    $variables['images'][$index]['alt'] = $image['alt'];
   }
 }
 
