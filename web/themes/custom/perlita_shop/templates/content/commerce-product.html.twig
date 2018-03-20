@@ -8,11 +8,11 @@
                     {% for index, image in images %}
                         {% if image.active %}
                             <div class="pro-large-img tab-pane active" id="pro-large-img-{{ image.id }}">
-                                {{ product.field_slika[index] }}
+                                <img src="{{ image.url }}" alt="{{ image.alt }}">
                             </div>
                         {% else %}
                             <div class="pro-large-img tab-pane" id="pro-large-img-{{ image.id }}">
-                                {{ product.field_slika[index] }}
+                                <img src="{{ image.url }}" alt="{{ image.alt }}">
                             </div>
                         {% endif %}
                     {% endfor %}
@@ -20,7 +20,7 @@
                 <!-- QuickView Product Thumbnail Slider -->
                 <div class="pro-thumb-img-slider">
                     {% for index, image in images %}
-                        <div> <a href="#pro-large-img-{{ image.id }}" data-toggle="tab">{{ product.field_slika[index] }}</a></div>
+                        <div> <a href="#pro-large-img-{{ image.id }}" data-toggle="tab"><img src="{{ image.url }}" alt="{{ image.alt }}"></a></div>
                     {% endfor %}
                 </div>
             </div>
