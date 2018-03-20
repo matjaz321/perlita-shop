@@ -173,15 +173,17 @@ function perlita_shop_theme_suggestions_alter(array &$suggestions, array $variab
  */
 function perlita_shop_preprocess_commerce_product(&$variables) {
   $images = $variables['product']['field_slika']['#items'];
-  $images = $images->getValue();
-  foreach ($images as $index => $image) {
-    if ($index == 0) {
-      $variables['images'][$index]['active'] = TRUE;
-    }
-    $variables['images'][$index]['image'] = $variables['product']['field_slika'][$index];
-    $variables['images'][$index]['id'] = $image['target_id'];
-    $variables['images'][$index]['url'] = file_create_url(File::load($image['target_id'])->url());
-    $variables['images'][$index]['alt'] = $image['alt'];
+  if (!empty($images)) {
+      $images = $images->getValue();
+      foreach ($images as $index => $image) {
+          if ($index == 0) {
+              $variables['images'][$index]['active'] = TRUE;
+          }
+          $variables['images'][$index]['image'] = $variables['product']['field_slika'][$index];
+          $variables['images'][$index]['id'] = $image['target_id'];
+          $variables['images'][$index]['url'] = file_create_url(File::load($image['target_id'])->url());
+          $variables['images'][$index]['alt'] = $image['alt'];
+      }
   }
 }
 
