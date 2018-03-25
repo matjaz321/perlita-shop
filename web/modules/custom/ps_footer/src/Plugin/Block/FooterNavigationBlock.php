@@ -116,7 +116,7 @@ class FooterNavigationBlock extends BlockBase implements ContainerFactoryPluginI
 
         $tree = $this->menuLinkTree->load($menu_name, $parameters);
         if (empty($tree)) {
-          return $build;
+          continue;
         }
 
         // Check for access.
