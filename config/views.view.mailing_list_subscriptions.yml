@@ -42,7 +42,7 @@ display:
         options:
           submit_button: Filter
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: Ponastavi
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -147,7 +147,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
+          label: 'Ime izdelka'
           exclude: false
           alter:
             alter_text: false
@@ -341,7 +341,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Author
+          label: Avtor
           exclude: false
           alter:
             alter_text: false
@@ -406,7 +406,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: Stanje
           exclude: false
           alter:
             alter_text: false
@@ -451,7 +451,7 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Active
+            format_custom_true: Aktiven
             format_custom_false: Inactive
           group_column: value
           group_columns: {  }
@@ -473,7 +473,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: Posodobljeno
           exclude: false
           alter:
             alter_text: false
@@ -540,7 +540,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operacije
           exclude: false
           alter:
             alter_text: false
@@ -598,7 +598,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Status
+            label: Stanje
             description: null
             use_operator: false
             operator: status_op
@@ -610,7 +610,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: Status
+            label: Stanje
             description: ''
             identifier: status
             optional: true
@@ -621,7 +621,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Active
+                title: Aktiven
                 operator: '='
                 value: '1'
               2:
@@ -726,7 +726,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: 'Ime izdelka'
             description: ''
             use_operator: false
             operator: title_op

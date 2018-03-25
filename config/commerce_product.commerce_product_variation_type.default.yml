@@ -10,3 +10,4 @@ orderItemType: default
 generateTitle: true
 traits:
   - purchasable_entity_shippable
+locked: false

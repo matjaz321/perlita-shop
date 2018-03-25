@@ -7,6 +7,8 @@ linkedin: 'https://www.linkedin.com/uas/login'
 instagram: 'https://www.instagram.com/?hl=en'
 menu_categories: 0
 menu_quick-links: 1
-menu_support: 1
+menu_support: 0
 menu_test: 1
+menu_povezave: 1
 langcode: sl
+menu_test2: 0

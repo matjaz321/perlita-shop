@@ -19,8 +19,9 @@ _core:
 label: Privzeto
 id: default
 workflow: order_fulfillment
-traits: {  }
 refresh_mode: customer
 refresh_frequency: 300
 sendReceipt: true
 receiptBcc: ''
+traits: {  }
+locked: false

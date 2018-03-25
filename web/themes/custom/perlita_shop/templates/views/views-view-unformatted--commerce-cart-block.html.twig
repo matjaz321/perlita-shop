@@ -25,9 +25,9 @@
   <li>
     <hr class="shipping-border" />
     <div class="shipping">
-      <span class="f-left"> Total </span>
+      <span class="f-left"> {{  'Total'|t }} </span>
       <span class="f-right cart-price">{{ total }}</span>
     </div>
   </li>
-  <li class="checkout m-0"><a href="{{ checkout_url }}">checkout <i class="pe-7s-angle-right"></i></a></li>
+  <li class="checkout m-0"><a href="{{ checkout_url }}">{{ 'checkout'|t }} <i class="pe-7s-angle-right"></i></a></li>
 {% endif %}

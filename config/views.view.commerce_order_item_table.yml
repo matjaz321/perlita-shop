@@ -88,7 +88,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Naslov
+          label: 'Ime izdelka'
           exclude: false
           alter:
             alter_text: false

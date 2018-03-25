@@ -68,10 +68,10 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ prejšnja'
-            next: 'naslednja ›'
-            first: '« prva'
-            last: 'zadnja »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           quantity: 9
       style:
         type: table
@@ -680,7 +680,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Total
+          label: Skupaj
           exclude: false
           alter:
             alter_text: false

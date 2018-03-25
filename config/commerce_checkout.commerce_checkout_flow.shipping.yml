@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: eGgj-Vay13MNDxbtb1YAjNZuUUgbp92Tr9hDQcR7ogo
 id: shipping
-label: Shipping
+label: Poštnina
 plugin: multistep_default
 configuration:
   display_checkout_progress: true

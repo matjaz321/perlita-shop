@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the completion message.
+ *
+ * Available variables:
+ * - order_entity: The order entity.
+ * - payment_instructions: The payment instructions, if provided.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="checkout-complete">
+  {{ 'Your order was sucessfully placed. In a few minutes you will receive confirmation message on your email. If you don\'t receive email please contanct us at podpora@perlita-nakit.si'|t }} <br>
+
+  {% if payment_instructions %}
+    <div class="checkout-complete__payment-instructions">
+      <h2>{{ 'Payment instructions'|t }}</h2>
+      {{ payment_instructions }}
+    </div>
+  {% endif %}
+</div>
