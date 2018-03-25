@@ -54,12 +54,14 @@ function ps_general_theme_suggestions_paragraph_alter(&$suggestions, $variables)
  * Implements hook_preprocess_hook().
  */
 function ps_general_preprocess_commerce_product__product_overview(&$variables) {
-  if ($image = $variables['elements']['field_slika'][0]['#item']) {
-    $file = File::load($image->target_id);
-    $variables['image'] = [
-      'url' => file_create_url($file->url()),
-      'alt' => $image->alt,
-    ];
+  if (isset($variables['elements']['field_slika'][0]['#item'])) {
+      if ($image = $variables['elements']['field_slika'][0]['#item']) {
+          $file = File::load($image->target_id);
+          $variables['image'] = [
+              'url' => file_create_url($file->url()),
+              'alt' => $image->alt,
+          ];
+      }
   }
 }
 
