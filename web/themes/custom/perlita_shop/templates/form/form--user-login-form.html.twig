@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+<div class="register-area ptb-100">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-lg-4 col-lg-offset-4">
+                <div class="login">
+                    <div class="login-form-container">
+                        <div class="login-text">
+                            <h2>{{ 'Prijava'|t }}</h2>
+                            <span>{{ 'Prijavite se s svojimi uporabniškimi podatki.'|t }}</span>
+                        </div>
+                        <div class="login-form">
+                            <form{{ attributes }}>
+                                {{ children }}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

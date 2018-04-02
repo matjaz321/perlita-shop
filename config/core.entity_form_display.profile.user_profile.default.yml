@@ -1,0 +1,22 @@
+uuid: e1573aa4-f353-42fc-8797-b8a98c6d4f43
+langcode: sl
+status: true
+dependencies:
+  config:
+    - field.field.profile.user_profile.field_telephone_number
+    - profile.type.user_profile
+  module:
+    - telephone
+id: profile.user_profile.default
+targetEntityType: profile
+bundle: user_profile
+mode: default
+content:
+  field_telephone_number:
+    weight: 0
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 1be486c4-7e20-429e-abb4-995f746e17f3
+langcode: sl
+status: true
+dependencies:
+  config:
+    - field.field.profile.user_profile.field_telephone_number
+    - profile.type.user_profile
+id: profile.user_profile.default
+targetEntityType: profile
+bundle: user_profile
+mode: default
+content:
+  field_telephone_number:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

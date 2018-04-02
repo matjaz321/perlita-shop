@@ -1,0 +1,25 @@
+uuid: c3bbb9b8-6533-454a-a062-c373c73d4c1f
+langcode: sl
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_telephone_number
+    - profile.type.user_profile
+  module:
+    - profile
+    - telephone
+third_party_settings:
+  profile:
+    profile_private: true
+id: profile.user_profile.field_telephone_number
+field_name: field_telephone_number
+entity_type: profile
+bundle: user_profile
+label: Telefon
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -28,10 +28,10 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.4",
         "drupal/ctools": "^3.0",
+        "drupal/easy_breadcrumb": "^1.6",
         "drupal/email_registration": "^1.0@RC",
         "drupal/eu_cookie_compliance": "^1.0@beta",
         "drupal/facets": "^1.0@beta",
-        "drupal/mailing_list": "^1.0@beta",
         "drupal/media_entity": "^1.7",
         "drupal/metatag": "^1.4",
         "drupal/page_manager": "^4.0@beta",
@@ -39,7 +39,6 @@
         "drupal/paragraphs": "^1.2",
         "drupal/pathauto": "^1.1",
         "drupal/search_api": "^1.6",
-        "drupal/simplenews": "^1.0@alpha",
         "drupal/social_auth": "^1.0",
         "drupal/social_auth_facebook": "^1.0",
         "drupal/social_auth_google": "^1.0",
@@ -48,8 +47,6 @@
         "drupal/twig_xdebug": "^1.0",
         "drupal/user_registrationpassword": "^1.0@alpha",
         "drupal/video_embed_field": "^1.5",
-        "drupal/views_send": "^1.2",
-        "drupal/webform": "^5.0@RC",
         "drush/drush": "^9.0.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
@@ -117,6 +114,9 @@
             },
             "drupal/panels": {
                 "Issue #2923286: Fatal error in with PHP 7.2": "https://www.drupal.org/files/issues/2923286-12.patch"
+            },
+            "drupal/user_registrationpassword": {
+                "Issue #2953874: Undefined index $_SESSION['messages'] in Drupal 8.5.0": "https://www.drupal.org/files/issues/2018-03-17/user_registrationpassword-use_drupal_8_5_0_messenger-2953874-3.patch"
             }
         }
     }

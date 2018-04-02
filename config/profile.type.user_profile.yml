@@ -1,0 +1,14 @@
+uuid: 3bc3aac3-45f3-48e2-9896-dd3ae97cfd27
+langcode: sl
+status: true
+dependencies: {  }
+id: user_profile
+label: 'Osebni podatki'
+registration: true
+multiple: false
+roles:
+  authenticated: '0'
+  administrator: '0'
+weight: 0
+use_revisions: false
+description: ''
