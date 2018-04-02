@@ -97,6 +97,7 @@ module:
   social_auth_twitter: 0
   state_machine: 0
   super_login: 0
+  swiftmailer: 0
   system: 0
   taxonomy: 0
   telephone: 0

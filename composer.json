@@ -45,6 +45,7 @@
         "drupal/social_auth_google": "^1.0",
         "drupal/social_auth_twitter": "^1.0@beta",
         "drupal/super_login": "dev-1.x",
+        "drupal/swiftmailer": "^1.0@beta",
         "drupal/twig_xdebug": "^1.0",
         "drupal/user_registrationpassword": "^1.0@alpha",
         "drupal/video_embed_field": "^1.5",
