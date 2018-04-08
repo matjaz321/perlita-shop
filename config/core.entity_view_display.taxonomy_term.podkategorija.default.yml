@@ -1,0 +1,16 @@
+uuid: 80878fe1-cc6c-4a09-985d-ca70b5aada4d
+langcode: sl
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.podkategorija.field_kategorija
+    - taxonomy.vocabulary.podkategorija
+id: taxonomy_term.podkategorija.default
+targetEntityType: taxonomy_term
+bundle: podkategorija
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_kategorija: true
+  langcode: true

@@ -1,0 +1,9 @@
+uuid: 6fb9a59d-1014-477e-9378-667f2e70803d
+langcode: sl
+status: true
+dependencies: {  }
+name: Podkategorija
+vid: podkategorija
+description: ''
+hierarchy: 0
+weight: 0

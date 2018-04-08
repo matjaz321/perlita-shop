@@ -1,0 +1,30 @@
+uuid: 43c44a26-fcd9-4adb-8e48-ca004d674f9a
+langcode: sl
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.podkategorija.field_kategorija
+    - taxonomy.vocabulary.podkategorija
+id: taxonomy_term.podkategorija.default
+targetEntityType: taxonomy_term
+bundle: podkategorija
+mode: default
+content:
+  field_kategorija:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true

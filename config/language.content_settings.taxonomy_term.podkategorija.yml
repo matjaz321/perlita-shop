@@ -1,0 +1,11 @@
+uuid: 3ae2116f-5980-451b-8e05-022e97fadc07
+langcode: sl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.podkategorija
+id: taxonomy_term.podkategorija
+target_entity_type_id: taxonomy_term
+target_bundle: podkategorija
+default_langcode: site_default
+language_alterable: false

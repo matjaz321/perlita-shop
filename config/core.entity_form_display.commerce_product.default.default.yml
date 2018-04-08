@@ -45,7 +45,7 @@ content:
     type: options_select
     region: content
   field_slika:
-    weight: 10
+    weight: 11
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
