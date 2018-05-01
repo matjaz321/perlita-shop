@@ -26,7 +26,7 @@
         "drupal/commerce_shipping": "^2.0@beta",
         "drupal/config_ignore": "^2.1",
         "drupal/console": "^1.0.2",
-        "drupal/core": "~8.4",
+        "drupal/core": "~8.5",
         "drupal/ctools": "^3.0",
         "drupal/easy_breadcrumb": "^1.6",
         "drupal/email_registration": "^1.0@RC",
@@ -56,7 +56,7 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "~8.4"
+        "webflo/drupal-core-require-dev": "~8.5"
     },
     "conflict": {
         "drupal/drupal": "*"
