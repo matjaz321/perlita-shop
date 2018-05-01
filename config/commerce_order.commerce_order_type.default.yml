@@ -22,6 +22,6 @@ workflow: order_fulfillment
 refresh_mode: customer
 refresh_frequency: 300
 sendReceipt: true
-receiptBcc: ''
+receiptBcc: matjaz.zavski15@gmail.com
 traits: {  }
 locked: false
