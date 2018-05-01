@@ -5,6 +5,8 @@ dependencies: {  }
 id: commerce_product
 label: Product
 tags:
+  abstract: '[commerce_product:field_metatag_opis]'
   keywords: 'Nakit, Unikatni nakit, Perlita, Perlita-nakit, Unikatno ročno izdelan nakit'
   robots: 'index, follow'
+  description: '[commerce_product:field_metatag_opis]'
   title: '[site:name]'

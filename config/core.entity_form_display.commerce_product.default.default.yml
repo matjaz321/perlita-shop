@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_kategorija
     - field.field.commerce_product.default.field_metatag
+    - field.field.commerce_product.default.field_metatag_opis
     - field.field.commerce_product.default.field_slika
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
@@ -51,6 +52,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
+    region: content
+  field_metatag_opis:
+    weight: 13
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
     region: content
   field_slika:
     weight: 11

@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_kategorija
     - field.field.commerce_product.default.field_metatag
+    - field.field.commerce_product.default.field_metatag_opis
     - field.field.commerce_product.default.field_slika
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
@@ -71,6 +72,7 @@ content:
     region: content
 hidden:
   created: true
+  field_metatag_opis: true
   langcode: true
   stores: true
   uid: true
