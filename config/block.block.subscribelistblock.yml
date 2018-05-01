@@ -1,0 +1,20 @@
+uuid: 942d3e78-95c2-4e76-8ae0-756f3bdacaa3
+langcode: sl
+status: true
+dependencies:
+  module:
+    - ps_general
+  theme:
+    - perlita_shop
+id: subscribelistblock
+theme: perlita_shop
+region: footer_col3
+weight: 0
+provider: null
+plugin: subscribe_list_block
+settings:
+  id: subscribe_list_block
+  label: 'Subscribe list block'
+  provider: ps_general
+  label_display: '0'
+visibility: {  }

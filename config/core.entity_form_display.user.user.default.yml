@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.user.user.commerce_remote_id
+    - field.field.user.user.field_prijava_na_e_novice
     - field.field.user.user.user_picture
   module:
+    - mailchimp_lists
+    - path
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -16,6 +19,18 @@ mode: default
 content:
   account:
     weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_prijava_na_e_novice:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: mailchimp_lists_select
+    region: content
+  path:
+    type: path
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

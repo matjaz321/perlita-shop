@@ -1,0 +1,39 @@
+uuid: 4d2d71e5-62da-4304-be7e-76283e825ae8
+langcode: sl
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_prijava_na_e_novice
+  module:
+    - mailchimp_lists
+    - user
+id: user.user.field_prijava_na_e_novice
+field_name: field_prijava_na_e_novice
+entity_type: user
+bundle: user
+label: 'Prijava na e-novice'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value:
+      subscribe: 0
+    subscribe: null
+    interest_groups: null
+default_value_callback: ''
+settings:
+  subscribe_checkbox_label: 'Dodaj me na email listo'
+  show_interest_groups: 0
+  hide_subscribe_checkbox: 0
+  interest_groups_hidden: 0
+  interest_groups_label: 'Interest Groups'
+  merge_fields:
+    EMAIL: mail
+    ADDRESS: ''
+    BIRTHDAY: ''
+    FNAME: ''
+    LNAME: ''
+    PHONE: ''
+  unsubscribe_on_delete: 0
+field_type: mailchimp_lists_subscription

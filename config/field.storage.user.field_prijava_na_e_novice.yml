@@ -1,0 +1,22 @@
+uuid: cad2e2b4-2525-4c20-949e-f0095c703e04
+langcode: sl
+status: true
+dependencies:
+  module:
+    - mailchimp_lists
+    - user
+id: user.field_prijava_na_e_novice
+field_name: field_prijava_na_e_novice
+entity_type: user
+type: mailchimp_lists_subscription
+settings:
+  mc_list_id: '1129559198'
+  double_opt_in: 0
+  send_welcome: 0
+module: mailchimp_lists
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

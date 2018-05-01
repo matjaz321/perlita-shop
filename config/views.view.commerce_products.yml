@@ -64,10 +64,10 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
           quantity: 9
       style:
         type: table
@@ -187,7 +187,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Ime izdelka'
+          label: Naslov
           exclude: false
           alter:
             alter_text: false
@@ -552,7 +552,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: 'Ime izdelka'
+            label: Naslov
             description: ''
             use_operator: false
             operator: title_op

@@ -161,7 +161,7 @@ display:
           id: title
           table: node_field_data
           field: title
-          label: 'Ime izdelka'
+          label: Naslov
           exclude: false
           alter:
             alter_text: false
@@ -369,7 +369,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: 'Ime izdelka'
+            label: Naslov
             description: ''
             use_operator: false
             operator: title_op

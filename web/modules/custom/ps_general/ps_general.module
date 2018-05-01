@@ -35,6 +35,11 @@ function ps_general_theme() {
     'file' => 'includes/theme.inc',
   ];
 
+  $templates['ps_subscribe_list_block'] = [
+    'file' => 'includes/theme.inc',
+    'variables' => [],
+  ];
+
   return $templates;
 }
 

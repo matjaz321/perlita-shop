@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.commerce_remote_id
+    - field.field.user.user.field_prijava_na_e_novice
     - field.field.user.user.user_picture
   module:
     - user
@@ -16,7 +17,9 @@ mode: default
 content: {  }
 hidden:
   commerce_remote_id: true
+  field_prijava_na_e_novice: true
   langcode: true
   member_for: true
   profile_customer: true
+  profile_user_profile: true
   user_picture: true

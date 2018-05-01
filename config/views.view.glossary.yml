@@ -77,7 +77,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Ime izdelka'
+          label: Naslov
           exclude: false
           alter:
             alter_text: false
