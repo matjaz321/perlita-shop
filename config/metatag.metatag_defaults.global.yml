@@ -7,5 +7,14 @@ _core:
 id: global
 label: Global
 tags:
+  keywords: 'Nakit, Unikatni nakit, Perlita, Perlita-nakit, Unikatno ročno izdelan nakit'
+  robots: 'index, follow'
   canonical_url: '[current-page:url]'
+  description: 'Unikatno ročno izdelan nakit.'
   title: '[current-page:title] | [site:name]'
+  google: 'Perlita nakit'
+  yandex: 'Perlita nakit'
+  bing: 'Perlita nakit'
+  pinterest: 'Perlita nakit'
+  norton_safe_web: 'Perlita nakit'
+  baidu: 'Perlita nakit'

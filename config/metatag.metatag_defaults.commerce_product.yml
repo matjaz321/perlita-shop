@@ -1,0 +1,10 @@
+uuid: 5dab5ab6-0c0e-4f0d-9e4b-676160a232e9
+langcode: sl
+status: true
+dependencies: {  }
+id: commerce_product
+label: Product
+tags:
+  keywords: 'Nakit, Unikatni nakit, Perlita, Perlita-nakit, Unikatno ročno izdelan nakit'
+  robots: 'index, follow'
+  title: '[site:name]'

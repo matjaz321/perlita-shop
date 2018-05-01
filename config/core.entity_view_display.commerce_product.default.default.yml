@@ -6,12 +6,14 @@ dependencies:
     - commerce_product.commerce_product_type.default
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_kategorija
+    - field.field.commerce_product.default.field_metatag
     - field.field.commerce_product.default.field_slika
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
   module:
     - commerce_product
     - image
+    - metatag
     - text
 _core:
   default_config_hash: gT03TFcuSod4d9uPQNs_gqK1F1QZ0Ray5CBYW0BNLnk
@@ -34,6 +36,13 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_metatag:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_slika:
     weight: 0

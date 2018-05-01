@@ -1,0 +1,23 @@
+uuid: 14a8ffa0-e715-4a8c-92e7-f58e57b79449
+langcode: sl
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_metatag
+  module:
+    - metatag
+id: commerce_product.default.field_metatag
+field_name: field_metatag
+entity_type: commerce_product
+bundle: default
+label: Metatag
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag
