@@ -32,9 +32,9 @@
         owl.owlCarousel({
           singleItem: true,
           items:1,
-          loop:true,
+          loop: (owl.children().length)==1 ? false:true,
           margin:10,
-          nav: true,
+          nav: (owl.children().length)==1 ? false:true,
           autoplay:true,
           autoplayTimeout:15000,
           autoplayHoverPause:true,
