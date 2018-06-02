@@ -7,8 +7,15 @@
                 <!-- QuickView Product Thumbnail Slider -->
                 <div class="pro-thumb-img-slider">
                     {% for index, image in images %}
-                        <div><a href="#pro-large-img-{{ image.id }}" data-toggle="tab"><img src="{{ image.url }}" alt="{{ image.alt }}"></a></div>
+                        <div><a href="#pro-large-img-{{ image.id }}" class="item" data-toggle="tab"><img src="{{ image.url }}" alt="{{ image.alt }}"></a></div>
                     {% endfor %}
+                </div>
+                <!-- QuickView Product Thumbnail Slider -->
+                {#<div class="pro-thumb-img-slider">
+                    <div><a href="#pro-large-img-2" class="item" data-toggle="tab"><img src="http://perlita-new.prod/sites/default/files/2018-03/IMG_4937-500x500.jpg" alt="" /></a></div>
+                    <div><a href="#pro-large-img-3" class="item" data-toggle="tab"><img src="http://perlita-new.prod/sites/default/files/2018-03/IMG_4956-500x500.jpg" alt="" /></a></div>
+                    <div><a href="#pro-large-img-4" class="item" data-toggle="tab"><img src="http://perlita-new.prod/sites/default/files/2018-03/IMG_6303-500x500.jpg" alt="" /></a></div>
+                    <div><a href="#pro-large-img-5" class="item" data-toggle="tab"><img src="http://perlita-new.prod/sites/default/files/2018-03/IMG_6311-500x500.jpg" alt="" /></a></div>
                 </div>#}
             </div>
             <!-- QuickView Product Details -->
