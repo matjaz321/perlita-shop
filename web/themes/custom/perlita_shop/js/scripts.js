@@ -28,27 +28,24 @@
         /*-------------------------
          product thumb img slider
          --------------------------*/
-        $('.pro-thumb-img-slider').owlCarousel({
-          loop: true,
-          animateOut: 'fadeOut',
-          animateIn: 'fadeIn',
-          items: 5,
-          dots: false,
-          margin: 25,
+        var owl = $('.pro-thumb-img-slider');
+        owl.owlCarousel({
+          singleItem: true,
+          items:1,
+          loop:true,
+          margin:10,
           nav: true,
+          autoplay:true,
+          autoplayTimeout:15000,
+          autoplayHoverPause:true,
           navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-          responsive: {
-            0: {
-              items: 3
-            },
-            600: {
-              items: 3
-            },
-            1000: {
-              items: 5
-            }
-          }
         });
+        $('.play').on('click',function(){
+          owl.trigger('autoplay.play.owl',[1000])
+        })
+        $('.stop').on('click',function(){
+          owl.trigger('autoplay.stop.owl')
+        })
 
         // Remove item from card.
         $('a.remove-item').on('click', function (event) {
